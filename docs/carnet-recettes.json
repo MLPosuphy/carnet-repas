@@ -1,0 +1,3897 @@
+{
+  "schemaVersion": 1,
+  "rev": 1,
+  "savedAt": "2026-06-16T10:10:26.408085Z",
+  "savedBy": "Seed Codex",
+  "recipes": [
+    {
+      "id": "cmqggb4cy007xryqc446826we",
+      "title": "Macarons",
+      "slug": "macarons",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802386,
+      "updatedAt": 1781602802386,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb4cy007yryqcs4xlmy0c",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb4c1007uryqci7qg5feb",
+      "title": "Île flottante",
+      "slug": "ile-flottante",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802353,
+      "updatedAt": 1781602802353,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb4c1007vryqcjrjwtigj",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb4b7007rryqc75y65b3s",
+      "title": "Kouign-amann",
+      "slug": "kouign-amann",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802323,
+      "updatedAt": 1781602802323,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb4b7007sryqch7nl53b0",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb4a5007oryqc48klfwsl",
+      "title": "Galette des rois",
+      "slug": "galette-des-rois",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802285,
+      "updatedAt": 1781602802285,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb4a5007pryqcv5flgur4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb499007lryqcngg01yas",
+      "title": "Mille-feuille",
+      "slug": "mille-feuille",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802253,
+      "updatedAt": 1781602802253,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb499007mryqcpblzsmnh",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb48c007iryqc5ep9hxrx",
+      "title": "Paris-Brest",
+      "slug": "paris-brest",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802220,
+      "updatedAt": 1781602802220,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb48c007jryqct0zb8rz7",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb47k007fryqczzrqwfip",
+      "title": "Tarte Tatin",
+      "slug": "tarte-tatin",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802192,
+      "updatedAt": 1781602802192,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb47k007gryqc2hggka5j",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb46r007cryqcd10iihu2",
+      "title": "Pain perdu brioché",
+      "slug": "pain-perdu-brioche",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802163,
+      "updatedAt": 1781602802163,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb46r007dryqcjimmw0q1",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb45h0079ryqctmvjir90",
+      "title": "Financiers (blancs d'oeufs)",
+      "slug": "financiers-blancs-d-oeufs",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802118,
+      "updatedAt": 1781602802118,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb45i007aryqckiytq4lg",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb44n0076ryqckws51v8l",
+      "title": "Madeleines",
+      "slug": "madeleines",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802087,
+      "updatedAt": 1781602802087,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb44n0077ryqcip2mjp2t",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb43v0073ryqc3ubv7ads",
+      "title": "Banana bread",
+      "slug": "banana-bread",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802059,
+      "updatedAt": 1781602802059,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb43v0074ryqc7zvuehjb",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb4310070ryqc2o4x7ina",
+      "title": "Tarte aux fraises / abricots / mirabelles",
+      "slug": "tarte-aux-fraises-abricots-mirabelles",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602802030,
+      "updatedAt": 1781602802030,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb4310071ryqc4t1bgtsl",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb425006xryqchpswqnyb",
+      "title": "Tarte au citron meringuée",
+      "slug": "tarte-au-citron-meringuee",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801998,
+      "updatedAt": 1781602801998,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb425006yryqclv3wn9yc",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb419006uryqcmart4m75",
+      "title": "Cheesecake",
+      "slug": "cheesecake",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801965,
+      "updatedAt": 1781602801965,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb419006vryqc1gynllga",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb40h006rryqcrrrsspi5",
+      "title": "Tiramisu",
+      "slug": "tiramisu",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801937,
+      "updatedAt": 1781602801937,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb40h006sryqc727oc3hc",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3zm006oryqcx2eny68q",
+      "title": "Marbré",
+      "slug": "marbre",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801906,
+      "updatedAt": 1781602801906,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3zm006pryqchwuue3mm",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3yt006lryqcr5hwf8ev",
+      "title": "Muffins pralinoise noix",
+      "slug": "muffins-pralinoise-noix",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801878,
+      "updatedAt": 1781602801878,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3yt006mryqcwiddtf2t",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3xy006iryqck7tdh7cf",
+      "title": "Gâteau Milka noix",
+      "slug": "gateau-milka-noix",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801846,
+      "updatedAt": 1781602801846,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3xy006jryqc98w7nzd0",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3wy006fryqcee79r7xs",
+      "title": "Cookies",
+      "slug": "cookies",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801810,
+      "updatedAt": 1781602801810,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3wy006gryqcz4b9xdh4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3w5006cryqc32zedgmo",
+      "title": "Brookies",
+      "slug": "brookies",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801781,
+      "updatedAt": 1781602801781,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3w5006dryqcdfn9n2j7",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3vc0069ryqccwvz2yyx",
+      "title": "Gaufres",
+      "slug": "gaufres",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801752,
+      "updatedAt": 1781602801752,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3vc006aryqc0790azyd",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3uf0066ryqc9paev7rc",
+      "title": "Gâteau au yaourt",
+      "slug": "gateau-au-yaourt",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801720,
+      "updatedAt": 1781602801720,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3uf0067ryqc5yt8zonz",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3th0063ryqcqs1fx57r",
+      "title": "Crêpes",
+      "slug": "crepes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801685,
+      "updatedAt": 1781602801685,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3th0064ryqcujfeun8m",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3st0060ryqcrfzzf2j5",
+      "title": "Bugnes",
+      "slug": "bugnes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801661,
+      "updatedAt": 1781602801661,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3st0061ryqco6q5gqj4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3s4005xryqc5op6y3nr",
+      "title": "Nougats",
+      "slug": "nougats",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801637,
+      "updatedAt": 1781602801637,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3s4005yryqcqwe9gaam",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3rf005uryqcwy2q63mf",
+      "title": "Chouchous",
+      "slug": "chouchous",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801611,
+      "updatedAt": 1781602801611,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3rf005vryqc1tezeo0c",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3qo005rryqcuemq8epi",
+      "title": "Croquants aux amandes",
+      "slug": "croquants-aux-amandes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801584,
+      "updatedAt": 1781602801584,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3qo005sryqcmothiwym",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3q0005oryqceetyw64q",
+      "title": "Tarte aux pommes",
+      "slug": "tarte-aux-pommes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801561,
+      "updatedAt": 1781602801561,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3q1005pryqcy1i9mjyl",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "dessert",
+        "gâteaux",
+        "import excel",
+        "pâtisserie",
+        "à compléter"
+      ],
+      "chapters": [
+        "Gâteaux"
+      ]
+    },
+    {
+      "id": "cmqggb3pc005lryqcfe502ycr",
+      "title": "Crozets au reblochon",
+      "slug": "crozets-au-reblochon",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801537,
+      "updatedAt": 1781602801537,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3pc005mryqcih04u0eg",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3oo005iryqcmppkiucu",
+      "title": "Enchiladas",
+      "slug": "enchiladas",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801512,
+      "updatedAt": 1781602801512,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3oo005jryqc3eun7f5x",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3nq005fryqcv5scwg9x",
+      "title": "Moules marinières / moules-frites",
+      "slug": "moules-marinieres-moules-frites",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801478,
+      "updatedAt": 1781602801478,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3nq005gryqcddmsz934",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3n2005cryqc7q5m8zkl",
+      "title": "Confit de canard, pommes sarladaises",
+      "slug": "confit-de-canard-pommes-sarladaises",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801454,
+      "updatedAt": 1781602801454,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3n2005dryqcjvieg7bw",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3md0059ryqcm6uzkdsa",
+      "title": "Fondue savoyarde",
+      "slug": "fondue-savoyarde",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801429,
+      "updatedAt": 1781602801429,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3md005aryqcvqoczglt",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3lo0056ryqck8vhp5f6",
+      "title": "Raclette",
+      "slug": "raclette",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801405,
+      "updatedAt": 1781602801405,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3lo0057ryqciqarqum2",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3ky0053ryqcllmqm641",
+      "title": "Tartiflette",
+      "slug": "tartiflette",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801378,
+      "updatedAt": 1781602801378,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3ky0054ryqcqvhyvvif",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3k90050ryqcu1rb8vav",
+      "title": "Tacos maison",
+      "slug": "tacos-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801354,
+      "updatedAt": 1781602801354,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3k90051ryqc3xt51qbr",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3jm004xryqclopr6ms4",
+      "title": "Pâtes + cordons bleus/nuggets",
+      "slug": "pates-cordons-bleus-nuggets",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801330,
+      "updatedAt": 1781602801330,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3jm004yryqcbkb3mnbz",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3ix004uryqcyo1dsepk",
+      "title": "Hamburger maison",
+      "slug": "hamburger-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801305,
+      "updatedAt": 1781602801305,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3ix004vryqcnjgd9c3t",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3i9004rryqc12i10bss",
+      "title": "Pizza maison",
+      "slug": "pizza-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801281,
+      "updatedAt": 1781602801281,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3i9004sryqcw6r4tnp8",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "comfort food",
+        "import excel",
+        "pas healthy",
+        "repas plaisir",
+        "à compléter"
+      ],
+      "chapters": [
+        "Pas healthy"
+      ]
+    },
+    {
+      "id": "cmqggb3hl004oryqctauwb941",
+      "title": "Focaccia",
+      "slug": "focaccia",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801257,
+      "updatedAt": 1781602801257,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3hl004pryqcrqrqy6vn",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3gy004lryqc4vzv0zdz",
+      "title": "Brandade de morue parmentière",
+      "slug": "brandade-de-morue-parmentiere",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801234,
+      "updatedAt": 1781602801234,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3gy004mryqcsio4mv3f",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3gb004iryqc1ex7zzk6",
+      "title": "Burritos",
+      "slug": "burritos",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801211,
+      "updatedAt": 1781602801211,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3gb004jryqcz8w5anbr",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3fn004fryqctsp3obpa",
+      "title": "Fajitas",
+      "slug": "fajitas",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801187,
+      "updatedAt": 1781602801187,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3fn004gryqcpl9wphxi",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3ex004cryqca5dzpxkj",
+      "title": "Tortilla espagnole",
+      "slug": "tortilla-espagnole",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801162,
+      "updatedAt": 1781602801162,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3ex004dryqc3s8mnqsm",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3e80049ryqcsc6rvmvb",
+      "title": "Poulet basquaise",
+      "slug": "poulet-basquaise",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801136,
+      "updatedAt": 1781602801136,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3e8004aryqc4j958c2a",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3db0046ryqcekx60u11",
+      "title": "Hachis Parmentier",
+      "slug": "hachis-parmentier",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801103,
+      "updatedAt": 1781602801103,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3db0047ryqcutw58712",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3cm0043ryqcagpy7t2i",
+      "title": "Féculents et poisson",
+      "slug": "feculents-et-poisson",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801078,
+      "updatedAt": 1781602801078,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3cm0044ryqc6ml6de1s",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3bw0040ryqcqu9wcxtb",
+      "title": "Pâtes fraîches maison",
+      "slug": "pates-fraiches-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801053,
+      "updatedAt": 1781602801053,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3bx0041ryqcv3xeuea8",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3b7003xryqccfiekzje",
+      "title": "Pâtes carbonara",
+      "slug": "pates-carbonara",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801027,
+      "updatedAt": 1781602801027,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3b7003yryqcttqihoq4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3ag003uryqcpr8ia4ii",
+      "title": "Maki maison",
+      "slug": "maki-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602801001,
+      "updatedAt": 1781602801001,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3ag003vryqc2y83qqkn",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb39n003rryqcc5s36fq7",
+      "title": "Dôme saumon avocat",
+      "slug": "dome-saumon-avocat",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800971,
+      "updatedAt": 1781602800971,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb39n003sryqc910dyld2",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb38v003oryqc3tf8z2zz",
+      "title": "Gratin de chou-fleur",
+      "slug": "gratin-de-chou-fleur",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800943,
+      "updatedAt": 1781602800943,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb38v003pryqc9rqx0zzf",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb384003lryqct8c4nw28",
+      "title": "Pâtes bolognaise",
+      "slug": "pates-bolognaise",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800917,
+      "updatedAt": 1781602800917,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb384003mryqc4ngi2riv",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb37g003iryqcwbs8h1a6",
+      "title": "Pinsa",
+      "slug": "pinsa",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800892,
+      "updatedAt": 1781602800892,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb37g003jryqcimktizs0",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb36t003fryqcqj7fzbq0",
+      "title": "Moussaka",
+      "slug": "moussaka",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800869,
+      "updatedAt": 1781602800869,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb36t003gryqcplmwuuk5",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb366003cryqccegu5rh2",
+      "title": "One pot tartare chorizo champignon",
+      "slug": "one-pot-tartare-chorizo-champignon",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800847,
+      "updatedAt": 1781602800847,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb367003dryqcz4b8uazw",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb35e0039ryqcbpjjoeqm",
+      "title": "Risotto poireaux poulet",
+      "slug": "risotto-poireaux-poulet",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800818,
+      "updatedAt": 1781602800818,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb35e003aryqcodx97zkz",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb34n0036ryqcsxcin77t",
+      "title": "Poulet curry riz",
+      "slug": "poulet-curry-riz",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800792,
+      "updatedAt": 1781602800792,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb34n0037ryqconynjccr",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb33s0033ryqcbu06f0p2",
+      "title": "Gnocchis (chou-fleur, carottes, pommes de terre)",
+      "slug": "gnocchis-chou-fleur-carottes-pommes-de-terre",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800760,
+      "updatedAt": 1781602800760,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb33s0034ryqcdkto03av",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb3350030ryqchjgsne6g",
+      "title": "Purée de carottes et viande",
+      "slug": "puree-de-carottes-et-viande",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800738,
+      "updatedAt": 1781602800738,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb3350031ryqcyh8z0wnk",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb325002xryqcbpk4sxhh",
+      "title": "Risotto champignons jambon cru",
+      "slug": "risotto-champignons-jambon-cru",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800701,
+      "updatedAt": 1781602800701,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb325002yryqcg5qfems4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb31i002uryqcttxgjsn7",
+      "title": "Pâtes aux crevettes",
+      "slug": "pates-aux-crevettes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800679,
+      "updatedAt": 1781602800679,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb31i002vryqc963173na",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb30v002rryqclsordj7v",
+      "title": "Gratin dauphinois",
+      "slug": "gratin-dauphinois",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800655,
+      "updatedAt": 1781602800655,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb30v002sryqc7qpwcr53",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb309002oryqc3ieihp7b",
+      "title": "Lasagnes",
+      "slug": "lasagnes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800633,
+      "updatedAt": 1781602800633,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb309002pryqcsw8k55kb",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2zl002lryqci798oy90",
+      "title": "Aubergines bolognaise",
+      "slug": "aubergines-bolognaise",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800610,
+      "updatedAt": 1781602800610,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2zl002mryqcjdphdxls",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2yz002iryqcdeh6njd9",
+      "title": "Gratin de ravioles",
+      "slug": "gratin-de-ravioles",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800587,
+      "updatedAt": 1781602800587,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2yz002jryqc42cwck9u",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2yb002fryqcnmmp1vw2",
+      "title": "Riz cantonais",
+      "slug": "riz-cantonais",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800563,
+      "updatedAt": 1781602800563,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2yb002gryqcrjc6e4j6",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2xo002cryqcy1hqk8t7",
+      "title": "Omelette pommes de terre lardons",
+      "slug": "omelette-pommes-de-terre-lardons",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800541,
+      "updatedAt": 1781602800541,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2xp002dryqc0ydcxs9i",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2x20029ryqccxk6rni6",
+      "title": "Nouilles coco curry",
+      "slug": "nouilles-coco-curry",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800518,
+      "updatedAt": 1781602800518,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2x2002aryqc6cgmgzzr",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2w90026ryqccgcr4h3j",
+      "title": "Pâtes courgettes carbonara",
+      "slug": "pates-courgettes-carbonara",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800489,
+      "updatedAt": 1781602800489,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2w90027ryqccu66c3rn",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2vn0023ryqc0adgw5hq",
+      "title": "Riz lardons chèvre",
+      "slug": "riz-lardons-chevre",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800467,
+      "updatedAt": 1781602800467,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2vn0024ryqcf2ca38s4",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2v00020ryqccamw83mr",
+      "title": "Cake salé feta et tomates séchées",
+      "slug": "cake-sale-feta-et-tomates-sechees",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800444,
+      "updatedAt": 1781602800444,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2v00021ryqcxbh71xh5",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2ud001xryqcjmf0asm4",
+      "title": "Tarte courgette saumon",
+      "slug": "tarte-courgette-saumon",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800421,
+      "updatedAt": 1781602800421,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2ud001yryqcjvmdq3ot",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2tp001uryqcgqo5xkit",
+      "title": "Pâtes chorizo poivron",
+      "slug": "pates-chorizo-poivron",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800398,
+      "updatedAt": 1781602800398,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2tp001vryqczwn3atzd",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2sy001rryqcp4qbsmhc",
+      "title": "Croques-monsieurs",
+      "slug": "croques-monsieurs",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800371,
+      "updatedAt": 1781602800371,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2sy001sryqcdrwu99yh",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "classique",
+        "classiques",
+        "import excel",
+        "plat",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Classiques"
+      ]
+    },
+    {
+      "id": "cmqggb2sb001oryqcfoyfowq7",
+      "title": "Salade avocat, jambon cru et tomates",
+      "slug": "salade-avocat-jambon-cru-et-tomates",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800347,
+      "updatedAt": 1781602800347,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2sb001pryqcs47xtxkc",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "salade",
+        "salades",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Salades"
+      ]
+    },
+    {
+      "id": "cmqggb2rm001lryqcpu5354vw",
+      "title": "Salade César",
+      "slug": "salade-cesar",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800322,
+      "updatedAt": 1781602800322,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2rm001mryqcv07whxle",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "salade",
+        "salades",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Salades"
+      ]
+    },
+    {
+      "id": "cmqggb2qy001iryqcfbg0p0g0",
+      "title": "Salade chèvre chaud",
+      "slug": "salade-chevre-chaud",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800298,
+      "updatedAt": 1781602800298,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2qy001jryqcqpso3y7d",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "salade",
+        "salades",
+        "à compléter"
+      ],
+      "chapters": [
+        "Salades"
+      ]
+    },
+    {
+      "id": "cmqggb2q6001fryqce3jvwsgm",
+      "title": "Salade grecque",
+      "slug": "salade-grecque",
+      "description": "Idée importée depuis \"Idée repas.xlsx\".",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Marquée d'un X dans le fichier Excel. Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800271,
+      "updatedAt": 1781602800271,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2q6001gryqcfuutwobh",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "salade",
+        "salades",
+        "à compléter",
+        "à prioriser"
+      ],
+      "chapters": [
+        "Salades"
+      ]
+    },
+    {
+      "id": "cmqggb2pe001cryqcknwuu0uk",
+      "title": "Ratatouille",
+      "slug": "ratatouille",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800241,
+      "updatedAt": 1781602800241,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2pe001dryqcrujiwqz6",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2oh0019ryqcw3dtoqvj",
+      "title": "Melon au jambon cru",
+      "slug": "melon-au-jambon-cru",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800209,
+      "updatedAt": 1781602800209,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2oh001aryqc1zh29ov3",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2nh0016ryqcxlhju6xk",
+      "title": "Riz, viande hachée et légumes",
+      "slug": "riz-viande-hachee-et-legumes",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800173,
+      "updatedAt": 1781602800173,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2nh0017ryqcxrelhix2",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2mo0013ryqcxnzohwan",
+      "title": "Quiche thon, tomates et moutarde",
+      "slug": "quiche-thon-tomates-et-moutarde",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800145,
+      "updatedAt": 1781602800145,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2mp0014ryqcrhknj8it",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2lw0010ryqc85r5fsx5",
+      "title": "Fondue de poireaux",
+      "slug": "fondue-de-poireaux",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800116,
+      "updatedAt": 1781602800116,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2lw0011ryqcfivvo3w0",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2l5000xryqcaghvgpqk",
+      "title": "Soupe maison",
+      "slug": "soupe-maison",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800089,
+      "updatedAt": 1781602800089,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2l5000yryqctq47skyx",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    },
+    {
+      "id": "cmqggb2kd000uryqc4050hqht",
+      "title": "Carottes à la Vichy",
+      "slug": "carottes-a-la-vichy",
+      "description": "Idée importée depuis \"Idée repas.xlsx\", section Riz, pâtes, légumes et viandes.",
+      "servings": 4,
+      "prepTimeMinutes": 0,
+      "cookTimeMinutes": 0,
+      "totalTimeMinutes": 0,
+      "difficulty": "easy",
+      "costLevel": "medium",
+      "season": "all_year",
+      "sourceType": "imported",
+      "sourceName": "Idée repas.xlsx",
+      "sourceUrl": null,
+      "imageUrl": null,
+      "personalNotes": "Ingrédients et étapes à compléter.",
+      "createdAt": 1781602800061,
+      "updatedAt": 1781602800061,
+      "lastCookedAt": null,
+      "averageRating": null,
+      "ingredients": [],
+      "steps": [
+        {
+          "id": "cmqggb2kd000vryqcn9evqedf",
+          "sortOrder": 0,
+          "text": "Compléter les ingrédients et les étapes de préparation.",
+          "timerMinutes": null,
+          "temperature": null,
+          "equipment": null,
+          "tip": null
+        }
+      ],
+      "tags": [
+        "healthy",
+        "import excel",
+        "riz et pâtes",
+        "riz, pâtes, légumes et viandes",
+        "à compléter"
+      ],
+      "chapters": [
+        "Healthy"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "cmqggb2930003ryqcorjfmxdi",
+      "title": "Healthy",
+      "description": "Idées du fichier Excel orientées repas simples et plutôt équilibrés.",
+      "coverImageUrl": null,
+      "color": "#6d8a6f",
+      "sortOrder": 0
+    },
+    {
+      "id": "cmqggb29k0005ryqcs8em1u2z",
+      "title": "Salades",
+      "description": "Salades et assiettes fraîches importées depuis le tableur.",
+      "coverImageUrl": null,
+      "color": "#4d638c",
+      "sortOrder": 1
+    },
+    {
+      "id": "cmqggb2a20007ryqc9csbpzp8",
+      "title": "Classiques",
+      "description": "Plats de tous les jours et classiques maison à compléter.",
+      "coverImageUrl": null,
+      "color": "#b78943",
+      "sortOrder": 2
+    },
+    {
+      "id": "cmqggb2am0009ryqc34wdh87s",
+      "title": "Pas healthy",
+      "description": "Repas plaisir, fromage, fast-food maison et plats réconfortants.",
+      "coverImageUrl": null,
+      "color": "#c9573f",
+      "sortOrder": 3
+    },
+    {
+      "id": "cmqggb2b8000bryqcsvqmqhmz",
+      "title": "Gâteaux",
+      "description": "Desserts et pâtisseries listés dans le fichier Excel.",
+      "coverImageUrl": null,
+      "color": "#8a6d7d",
+      "sortOrder": 4
+    }
+  ],
+  "pantry": [
+    {
+      "id": "cmqggb4do0081ryqc8k86koby",
+      "name": "courgettes",
+      "quantity": 2.0,
+      "unit": "pièces",
+      "location": "fridge",
+      "expirationDate": null
+    },
+    {
+      "id": "cmqggb4do0084ryqcff5txgl7",
+      "name": "fromage râpé",
+      "quantity": 150.0,
+      "unit": "g",
+      "location": "fridge",
+      "expirationDate": null
+    },
+    {
+      "id": "cmqggb4do007zryqcnttr1rd6",
+      "name": "oeufs",
+      "quantity": 6.0,
+      "unit": "pièces",
+      "location": "fridge",
+      "expirationDate": null
+    },
+    {
+      "id": "cmqggb4do0083ryqcfctbp3pq",
+      "name": "pâtes",
+      "quantity": 500.0,
+      "unit": "g",
+      "location": "pantry",
+      "expirationDate": null
+    },
+    {
+      "id": "cmqggb4do0082ryqcdv4hjzn2",
+      "name": "riz",
+      "quantity": 500.0,
+      "unit": "g",
+      "location": "pantry",
+      "expirationDate": null
+    },
+    {
+      "id": "cmqggb4do0080ryqclo29eaoy",
+      "name": "tomates",
+      "quantity": 4.0,
+      "unit": "pièces",
+      "location": "fridge",
+      "expirationDate": null
+    }
+  ],
+  "shopping": [],
+  "mealPlan": [],
+  "settings": {
+    "name": "Mateo",
+    "defaultServings": 4
+  }
+}
