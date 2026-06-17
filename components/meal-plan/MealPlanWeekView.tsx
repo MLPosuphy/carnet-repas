@@ -87,14 +87,14 @@ export function MealPlanWeekView({
               <CardBody className="grid gap-2">
                 {entries.length > 0 ? (
                   entries.map((entry) => (
-                    <div key={entry.id} className="rounded-md bg-cream p-3">
+                    <div key={entry.id} className="rounded-md bg-canvas p-3">
                       <div className="flex items-start justify-between gap-2">
                         <div>
                           <Badge tone="blue">{mealLabels[entry.mealType]}</Badge>
                           <p className="mt-2 text-sm font-semibold">
                             {entry.recipe.title}
                           </p>
-                          <p className="text-xs text-[#6d6257]">
+                          <p className="text-xs text-body">
                             {entry.servings} portion(s)
                           </p>
                         </div>
@@ -113,7 +113,7 @@ export function MealPlanWeekView({
                     </div>
                   ))
                 ) : (
-                  <p className="text-sm text-[#6d6257]">Aucun repas.</p>
+                  <p className="text-sm text-body">Aucun repas.</p>
                 )}
               </CardBody>
             </Card>

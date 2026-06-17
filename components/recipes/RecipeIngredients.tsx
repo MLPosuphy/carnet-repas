@@ -15,7 +15,7 @@ export function RecipeIngredients({
 }) {
   if (ingredients.length === 0) {
     return (
-      <p className="rounded-md bg-cream px-3 py-2 text-sm leading-6 text-[#6d6257]">
+      <p className="rounded-md bg-canvas px-3 py-2 text-sm leading-6 text-body">
         Aucun ingrédient renseigné pour le moment.
       </p>
     );
@@ -26,15 +26,15 @@ export function RecipeIngredients({
       {ingredients.map((ingredient) => (
         <li
           key={ingredient.id}
-          className="flex items-start justify-between gap-3 rounded-md bg-cream px-3 py-2 text-sm"
+          className="flex items-start justify-between gap-3 rounded-md bg-canvas px-3 py-2 text-sm"
         >
           <span>
             <span className="font-medium">{ingredient.name}</span>
             {ingredient.notes ? (
-              <span className="text-[#6d6257]">, {ingredient.notes}</span>
+              <span className="text-body">, {ingredient.notes}</span>
             ) : null}
             {ingredient.optional ? (
-              <span className="text-[#6d6257]"> optionnel</span>
+              <span className="text-body"> optionnel</span>
             ) : null}
           </span>
           <span className="shrink-0 font-semibold">

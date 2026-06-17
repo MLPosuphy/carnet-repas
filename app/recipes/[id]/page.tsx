@@ -59,10 +59,10 @@ export default async function RecipeDetailPage({
         <Card>
           <CardBody className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-start gap-3">
-              <AlertCircle className="mt-0.5 h-5 w-5 text-brass" aria-hidden="true" />
+              <AlertCircle className="mt-0.5 h-5 w-5 text-brand-ochre" aria-hidden="true" />
               <div>
                 <h2 className="font-semibold">Recette à compléter</h2>
-                <p className="text-sm leading-6 text-[#6d6257]">
+                <p className="text-sm leading-6 text-body">
                   Cette fiche vient de l'import Excel. Ajoute ses ingrédients et ses
                   étapes pour activer les courses et les recommandations.
                 </p>
@@ -100,17 +100,17 @@ export default async function RecipeDetailPage({
               ))}
             </div>
             {recipe.personalNotes ? (
-              <p className="rounded-md bg-cream px-3 py-2 text-sm leading-6 text-[#5f554c]">
+              <p className="rounded-md bg-canvas px-3 py-2 text-sm leading-6 text-muted">
                 {recipe.personalNotes}
               </p>
             ) : null}
-            <div className="grid gap-2 text-sm text-[#6d6257] sm:grid-cols-2">
+            <div className="grid gap-2 text-sm text-body sm:grid-cols-2">
               <p>Préparation : {formatDuration(recipe.prepTimeMinutes)}</p>
               <p>Cuisson : {formatDuration(recipe.cookTimeMinutes)}</p>
               <p>Source : {labelFromValue(recipe.sourceType)}</p>
               {recipe.sourceName ? <p>Nom : {recipe.sourceName}</p> : null}
               {recipe.sourceUrl ? (
-                <a href={recipe.sourceUrl} className="font-medium text-blueberry hover:underline">
+                <a href={recipe.sourceUrl} className="font-medium text-brand-lavender hover:underline">
                   Source en ligne
                 </a>
               ) : null}
@@ -180,10 +180,10 @@ export default async function RecipeDetailPage({
             recipe.cookingSessions.map((session) => (
               <div
                 key={session.id}
-                className="rounded-md border border-[#eee6da] bg-paper p-3"
+                className="rounded-md border border-hairline bg-canvas p-3"
               >
                 <div className="flex flex-wrap items-center gap-2">
-                  <CalendarDays className="h-4 w-4 text-[#6d6257]" aria-hidden="true" />
+                  <CalendarDays className="h-4 w-4 text-body" aria-hidden="true" />
                   <span className="font-medium">
                     {session.cookedAt.toLocaleDateString("fr-FR")}
                   </span>
@@ -191,12 +191,12 @@ export default async function RecipeDetailPage({
                   {session.wouldCookAgain ? <Badge tone="green">à refaire</Badge> : null}
                 </div>
                 {session.notes ? (
-                  <p className="mt-2 text-sm leading-6 text-[#6d6257]">{session.notes}</p>
+                  <p className="mt-2 text-sm leading-6 text-body">{session.notes}</p>
                 ) : null}
               </div>
             ))
           ) : (
-            <p className="text-sm text-[#6d6257]">
+            <p className="text-sm text-body">
               Aucune session enregistrée pour cette recette.
             </p>
           )}

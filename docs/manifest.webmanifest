@@ -4,7 +4,7 @@
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
-  "background_color": "#f6f6f3",
-  "theme_color": "#4d7c72",
+  "background_color": "#fffaf0",
+  "theme_color": "#fffaf0",
   "description": "Carnet de recettes personnel compatible GitHub Pages"
 }

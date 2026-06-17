@@ -32,7 +32,7 @@ export default async function ChaptersPage() {
           <form action={createChapterAction} className="grid gap-3 md:grid-cols-[1fr_1.4fr_auto_auto]">
             <Input name="title" required placeholder="Ex. Recettes de famille" />
             <Input name="description" placeholder="Description courte" />
-            <Input name="color" type="color" defaultValue="#b78943" aria-label="Couleur" className="w-16 px-1" />
+            <Input name="color" type="color" defaultValue="#e8b94a" aria-label="Couleur" className="w-16 px-1" />
             <Button type="submit">
               <Plus className="h-4 w-4" />
               Créer

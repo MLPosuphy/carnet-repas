@@ -63,7 +63,7 @@ export default async function ShoppingPage() {
                   recipes.map((recipe) => (
                     <label
                       key={recipe.id}
-                      className="grid gap-2 rounded-md bg-cream p-2 text-sm md:grid-cols-[auto_1fr_90px]"
+                      className="grid gap-2 rounded-md border border-hairline bg-canvas p-2 text-sm md:grid-cols-[auto_1fr_90px]"
                     >
                       <input name="recipeId" type="checkbox" value={recipe.id} className="mt-2 h-4 w-4" />
                       <span className="font-medium">{recipe.title}</span>
@@ -77,7 +77,7 @@ export default async function ShoppingPage() {
                     </label>
                   ))
                 ) : (
-                  <p className="rounded-md bg-cream px-3 py-2 text-sm text-[#6d6257]">
+                  <p className="rounded-md bg-canvas px-3 py-2 text-sm text-body">
                     Complète au moins une recette avec des ingrédients pour générer une
                     liste automatiquement.
                   </p>
@@ -98,7 +98,7 @@ export default async function ShoppingPage() {
           <div className="grid gap-5">
             {Object.entries(groupedItems).map(([category, items]) => (
               <div key={category} className="grid gap-2">
-                <h3 className="text-sm font-semibold uppercase tracking-normal text-[#6d6257]">
+                <h3 className="text-sm font-semibold uppercase tracking-normal text-muted">
                   {labelFromValue(category)}
                 </h3>
                 {items.map((item) => (

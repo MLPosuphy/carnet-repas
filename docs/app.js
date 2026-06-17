@@ -226,7 +226,7 @@
   function chapterColor(recipe) {
     const title = asArray(recipe.chapters)[0];
     const chapter = state.chapters.find((item) => item.title === title);
-    return chapter?.color || "#4d7c72";
+    return chapter?.color || "#1a3a3a";
   }
 
   function getFilteredRecipes() {
@@ -1053,7 +1053,7 @@
           title,
           description: "",
           coverImageUrl: null,
-          color: "#4d7c72",
+          color: "#1a3a3a",
           sortOrder: state.chapters.length,
         });
       }

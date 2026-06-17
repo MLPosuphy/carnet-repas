@@ -28,7 +28,7 @@ export function Timer({ minutes }: { minutes: number }) {
   }, [seconds]);
 
   return (
-    <div className="flex items-center gap-2 rounded-md border border-[#e3d8c7] bg-cream px-3 py-2">
+    <div className="flex items-center gap-2 rounded-md border border-hairline bg-canvas px-3 py-2">
       <span className="tabular-nums text-sm font-semibold">{label}</span>
       <Button
         type="button"

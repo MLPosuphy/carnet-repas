@@ -21,7 +21,7 @@ export function RecipeScalingControl({
 
   if (ingredients.length === 0) {
     return (
-      <p className="rounded-md bg-cream px-3 py-2 text-sm leading-6 text-[#6d6257]">
+      <p className="rounded-md bg-canvas px-3 py-2 text-sm leading-6 text-body">
         Ajoute des ingrédients pour pouvoir adapter les portions.
       </p>
     );
@@ -42,7 +42,7 @@ export function RecipeScalingControl({
       </label>
       <div className="overflow-x-auto">
         <table className="w-full min-w-[520px] text-left text-sm">
-          <thead className="border-b border-[#e3d8c7] text-[#6d6257]">
+          <thead className="border-b border-hairline text-muted">
             <tr>
               <th className="py-2 font-medium">Ingrédient</th>
               <th className="py-2 font-medium">Original</th>
@@ -51,7 +51,7 @@ export function RecipeScalingControl({
           </thead>
           <tbody>
             {ingredients.map((ingredient) => (
-              <tr key={ingredient.id} className="border-b border-[#eee6da]">
+              <tr key={ingredient.id} className="border-b border-hairline">
                 <td className="py-2 font-medium">{ingredient.name}</td>
                 <td className="py-2">
                   {formatQuantity(ingredient.quantity, ingredient.unit)}

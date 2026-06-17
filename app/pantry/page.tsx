@@ -77,8 +77,10 @@ export default async function PantryPage({
             key={item.value || "all"}
             href={item.value ? `/pantry?location=${item.value}` : "/pantry"}
             className={cn(
-              "focus-ring rounded-md px-3 py-2 text-sm font-medium transition",
-              location === item.value ? "bg-ink text-white" : "bg-cream hover:bg-[#e8dfcf]"
+              "focus-ring rounded-full px-4 py-2 text-sm font-medium transition",
+              location === item.value
+                ? "bg-ink text-on-primary"
+                : "bg-surface-card text-muted hover:bg-surface-strong hover:text-ink"
             )}
           >
             {item.label}

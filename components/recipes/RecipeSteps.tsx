@@ -16,14 +16,14 @@ export function RecipeSteps({
   return (
     <ol className="grid gap-3">
       {steps.map((step, index) => (
-        <li key={step.id} className="rounded-md border border-[#eee6da] bg-white p-4">
+        <li key={step.id} className="rounded-md border border-hairline bg-canvas p-4">
           <div className="flex gap-3">
-            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-md bg-ink text-sm font-semibold text-white">
+            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-md bg-ink text-sm font-semibold text-on-primary">
               {index + 1}
             </span>
             <div className="grid gap-2">
               <p className="leading-7">{step.text}</p>
-              <div className="flex flex-wrap gap-2 text-sm text-[#6d6257]">
+              <div className="flex flex-wrap gap-2 text-sm text-body">
                 {step.timerMinutes ? (
                   <span className="inline-flex items-center gap-1">
                     <Clock className="h-4 w-4" aria-hidden="true" />
@@ -34,7 +34,7 @@ export function RecipeSteps({
                 {step.equipment ? <span>{step.equipment}</span> : null}
               </div>
               {step.tip ? (
-                <p className="rounded-md bg-[#e2eadf] px-3 py-2 text-sm text-[#425c43]">
+                <p className="rounded-md bg-brand-mint px-3 py-2 text-sm text-ink">
                   {step.tip}
                 </p>
               ) : null}

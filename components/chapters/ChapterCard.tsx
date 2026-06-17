@@ -78,7 +78,7 @@ export function ChapterCard({ chapter, recipes }: ChapterCardProps) {
             {chapter.recipes.map(({ recipe }) => (
               <div
                 key={recipe.id}
-                className="flex flex-wrap items-center justify-between gap-2 rounded-md bg-cream px-3 py-2"
+                className="flex flex-wrap items-center justify-between gap-2 rounded-md bg-canvas px-3 py-2"
               >
                 <Link href={`/recipes/${recipe.id}`} className="font-medium hover:underline">
                   {recipe.title}
@@ -101,7 +101,7 @@ export function ChapterCard({ chapter, recipes }: ChapterCardProps) {
             ))}
           </div>
         ) : (
-          <p className="rounded-md bg-cream px-3 py-2 text-sm text-[#6d6257]">
+          <p className="rounded-md bg-canvas px-3 py-2 text-sm text-body">
             Aucune recette dans ce chapitre.
           </p>
         )}

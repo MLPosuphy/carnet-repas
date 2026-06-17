@@ -19,7 +19,7 @@ export default async function SettingsPage() {
           <p>
             <span className="font-medium">Email :</span> {user.email}
           </p>
-          <p className="text-[#6d6257]">
+          <p className="text-body">
             Les préférences culinaires sont structurées en base pour les futures
             recommandations personnalisées.
           </p>

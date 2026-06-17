@@ -30,7 +30,7 @@ export function RecommendationCard({
                 </Badge>
               ))
             ) : (
-              <span className="text-[#6d6257]">Aucun ingrédient trouvé.</span>
+              <span className="text-body">Aucun ingrédient trouvé.</span>
             )}
           </div>
           <p className="font-medium">Manquants</p>
@@ -42,7 +42,7 @@ export function RecommendationCard({
         </div>
         <Link
           href={`/recipes/${recommendation.recipeId}`}
-          className="focus-ring inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-cream px-4 text-sm font-medium transition hover:bg-[#e8dfcf]"
+          className="focus-ring inline-flex h-11 w-full items-center justify-center gap-2 rounded-md border border-hairline bg-canvas px-4 text-sm font-medium transition hover:bg-surface-card"
         >
           Voir la recette
           <ArrowRight className="h-4 w-4" />

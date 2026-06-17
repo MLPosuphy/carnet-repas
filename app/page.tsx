@@ -30,6 +30,15 @@ const shortcuts = [
   { href: "/meal-plan", label: "Planning", icon: CalendarDays }
 ];
 
+const shortcutCardClasses = [
+  "border-transparent bg-brand-pink text-on-primary hover:bg-brand-pink/90",
+  "border-transparent bg-brand-teal text-on-primary hover:bg-brand-teal/90",
+  "border-transparent bg-brand-lavender text-ink hover:bg-brand-lavender/90",
+  "border-transparent bg-brand-peach text-ink hover:bg-brand-peach/90",
+  "border-transparent bg-brand-ochre text-ink hover:bg-brand-ochre/90",
+  "border-transparent bg-surface-card text-ink hover:bg-surface-strong"
+];
+
 export default async function HomePage() {
   const user = await getDemoUser();
   const [recipeStats, recentRecipes, cookSoon, expiringItems] = await Promise.all([
@@ -53,16 +62,20 @@ export default async function HomePage() {
       />
 
       <section className="grid gap-4 lg:grid-cols-[1fr_2fr]">
-        <Card>
+        <Card className="border-transparent bg-brand-lavender">
           <CardBody className="grid gap-3">
-            <p className="text-sm font-medium text-[#6d6257]">Recettes dans le carnet</p>
+            <p className="text-sm font-medium text-ink">Recettes dans le carnet</p>
             <p className="text-5xl font-semibold">{recipeStats.total}</p>
-            <p className="text-sm leading-6 text-[#6d6257]">
+            <p className="text-sm leading-6 text-ink">
               Ton livre local est prêt à grandir avec tes variantes, notes et repas
               favoris.
             </p>
             {recipeStats.toComplete > 0 ? (
-              <LinkButton href="/recipes?status=to_complete" variant="secondary">
+              <LinkButton
+                href="/recipes?status=to_complete"
+                variant="secondary"
+                className="border-transparent bg-canvas"
+              >
                 {recipeStats.toComplete} à compléter
               </LinkButton>
             ) : (
@@ -71,14 +84,14 @@ export default async function HomePage() {
           </CardBody>
         </Card>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {shortcuts.map((shortcut) => {
+          {shortcuts.map((shortcut, index) => {
             const Icon = shortcut.icon;
             return (
               <LinkButton
                 key={shortcut.href}
                 href={shortcut.href}
                 variant="secondary"
-                className="h-16 justify-start"
+                className={`h-16 justify-start ${shortcutCardClasses[index]}`}
               >
                 <Icon className="h-5 w-5" />
                 {shortcut.label}
@@ -129,7 +142,7 @@ export default async function HomePage() {
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-[#6d6257]">Aucune suggestion pour le moment.</p>
+              <p className="text-sm text-body">Aucune suggestion pour le moment.</p>
             )}
           </CardBody>
         </Card>
@@ -142,17 +155,17 @@ export default async function HomePage() {
                 {expiringItems.map((item) => (
                   <div
                     key={item.id}
-                    className="flex items-center justify-between rounded-md bg-cream px-3 py-2"
+                    className="flex items-center justify-between rounded-md bg-canvas px-3 py-2"
                   >
                     <span className="font-medium">{item.name}</span>
-                    <span className="text-sm text-[#6d6257]">
+                    <span className="text-sm text-body">
                       {formatQuantity(item.quantity, item.unit)}
                     </span>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-[#6d6257]">
+              <p className="text-sm text-body">
                 Rien ne semble expirer dans les trois prochains jours.
               </p>
             )}

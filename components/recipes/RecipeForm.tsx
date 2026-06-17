@@ -245,7 +245,7 @@ export function RecipeForm({
           {ingredients.map((ingredient, index) => (
             <div
               key={ingredient.id}
-              className="grid gap-2 rounded-md border border-[#eee6da] bg-paper p-3 md:grid-cols-[1.2fr_0.45fr_0.45fr_1fr_auto]"
+              className="grid gap-2 rounded-md border border-hairline bg-canvas p-3 md:grid-cols-[1.2fr_0.45fr_0.45fr_1fr_auto]"
             >
               <Input
                 value={ingredient.name}
@@ -364,7 +364,7 @@ export function RecipeForm({
           {steps.map((step, index) => (
             <div
               key={step.id}
-              className="grid gap-2 rounded-md border border-[#eee6da] bg-paper p-3"
+              className="grid gap-2 rounded-md border border-hairline bg-canvas p-3"
             >
               <Textarea
                 value={step.text}

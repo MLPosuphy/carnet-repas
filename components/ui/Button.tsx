@@ -11,17 +11,17 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-ink text-white hover:bg-[#3a342f]",
-  secondary: "bg-cream text-ink hover:bg-[#e8dfcf]",
-  ghost: "bg-transparent text-ink hover:bg-cream",
-  danger: "bg-tomato text-white hover:bg-[#aa4632]"
+  primary: "border border-ink bg-ink text-on-primary hover:bg-primary-active",
+  secondary: "border border-hairline bg-canvas text-ink hover:bg-surface-card",
+  ghost: "border border-transparent bg-transparent text-ink hover:bg-surface-card",
+  danger: "border border-error bg-error text-on-primary hover:bg-brand-coral"
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: "h-9 px-3 text-sm",
-  md: "h-10 px-4 text-sm",
-  lg: "h-12 px-5 text-base",
-  icon: "h-10 w-10 p-0"
+  md: "h-11 px-5 text-sm",
+  lg: "h-12 px-6 text-base",
+  icon: "h-11 w-11 p-0"
 };
 
 export function Button({

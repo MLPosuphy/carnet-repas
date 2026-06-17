@@ -77,7 +77,7 @@ export function CookModeStep({
                 name="wouldCookAgain"
                 type="checkbox"
                 defaultChecked
-                className="h-4 w-4 rounded border-[#d7cdbb]"
+                className="h-4 w-4 rounded border-hairline"
               />
               Je referais cette recette
             </label>
@@ -99,12 +99,12 @@ export function CookModeStep({
     <Card>
       <CardBody className="grid gap-6">
         <div>
-          <p className="text-sm font-medium text-[#6d6257]">
+          <p className="text-sm font-medium text-body">
             Étape {index + 1} / {steps.length}
           </p>
-          <div className="mt-2 h-2 rounded-full bg-cream">
+          <div className="mt-2 h-2 rounded-full bg-surface-strong">
             <div
-              className="h-2 rounded-full bg-sage transition-all"
+              className="h-2 rounded-full bg-brand-pink transition-all"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -113,12 +113,12 @@ export function CookModeStep({
         <div className="grid gap-4">
           <h2 className="text-2xl font-semibold">{title}</h2>
           <p className="text-xl leading-9">{step.text}</p>
-          <div className="flex flex-wrap gap-2 text-sm text-[#6d6257]">
+          <div className="flex flex-wrap gap-2 text-sm text-body">
             {step.temperature ? <span>{step.temperature}</span> : null}
             {step.equipment ? <span>{step.equipment}</span> : null}
           </div>
           {step.tip ? (
-            <p className="rounded-md bg-[#e2eadf] px-3 py-2 text-sm text-[#425c43]">
+            <p className="rounded-md bg-brand-mint px-3 py-2 text-sm text-ink">
               {step.tip}
             </p>
           ) : null}

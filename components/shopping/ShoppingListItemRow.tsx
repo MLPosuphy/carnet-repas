@@ -24,7 +24,7 @@ export function ShoppingListItemRow({
   return (
     <div
       className={cn(
-        "grid gap-3 rounded-md border border-[#eee6da] bg-white p-3 md:grid-cols-[auto_1fr_auto_auto]",
+        "grid gap-3 rounded-md border border-hairline bg-canvas p-3 md:grid-cols-[auto_1fr_auto_auto]",
         item.checked && "opacity-60"
       )}
     >
@@ -41,7 +41,7 @@ export function ShoppingListItemRow({
       </form>
       <div>
         <p className={cn("font-medium", item.checked && "line-through")}>{item.name}</p>
-        <p className="text-sm text-[#6d6257]">
+        <p className="text-sm text-body">
           {formatQuantity(item.quantity, item.unit)}
           {item.notes ? ` · ${item.notes}` : ""}
         </p>

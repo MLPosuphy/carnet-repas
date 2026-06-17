@@ -31,7 +31,7 @@ export function PantryItemCard({
         <div className="flex items-start justify-between gap-3">
           <div>
             <h2 className="font-semibold">{item.name}</h2>
-            <p className="text-sm text-[#6d6257]">
+            <p className="text-sm text-body">
               {formatQuantity(item.quantity, item.unit)} · {item.location}
             </p>
           </div>

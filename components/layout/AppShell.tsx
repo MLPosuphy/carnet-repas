@@ -28,15 +28,15 @@ export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   return (
-    <div className="min-h-screen bg-paper">
-      <aside className="fixed inset-x-0 bottom-0 z-30 border-t border-[#e3d8c7] bg-white/95 px-2 py-2 backdrop-blur md:inset-y-0 md:left-0 md:right-auto md:w-64 md:border-r md:border-t-0 md:px-4 md:py-5">
+    <div className="min-h-screen bg-canvas text-ink">
+      <aside className="fixed inset-x-0 bottom-0 z-30 border-t border-hairline bg-canvas/95 px-2 py-2 backdrop-blur md:inset-y-0 md:left-0 md:right-auto md:w-64 md:border-r md:border-t-0 md:px-4 md:py-5">
         <Link href="/" className="mb-8 hidden items-center gap-3 md:flex">
-          <span className="grid h-10 w-10 place-items-center rounded-md bg-ink text-white">
+          <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-peach text-ink">
             <BookOpen className="h-5 w-5" aria-hidden="true" />
           </span>
           <span>
             <span className="block text-sm font-semibold">Recipe Book</span>
-            <span className="block text-xs text-[#7c6e60]">Carnet culinaire</span>
+            <span className="block text-xs text-muted">Carnet culinaire</span>
           </span>
         </Link>
         <nav className="grid grid-cols-7 gap-1 md:grid-cols-1 md:gap-2">
@@ -51,10 +51,10 @@ export function AppShell({ children }: { children: ReactNode }) {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "focus-ring flex min-h-12 flex-col items-center justify-center gap-1 rounded-md px-2 py-2 text-xs font-medium transition md:min-h-10 md:flex-row md:justify-start md:px-3 md:text-sm",
+                  "focus-ring flex min-h-12 flex-col items-center justify-center gap-1 rounded-md px-2 py-2 text-xs font-medium transition md:min-h-11 md:flex-row md:justify-start md:px-3 md:text-sm",
                   active
-                    ? "bg-ink text-white"
-                    : "text-[#5f554c] hover:bg-cream hover:text-ink"
+                    ? "bg-ink text-on-primary"
+                    : "text-muted hover:bg-surface-card hover:text-ink"
                 )}
               >
                 <Icon className="h-4 w-4" aria-hidden="true" />

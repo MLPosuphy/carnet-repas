@@ -21,11 +21,11 @@ export function RecipeCard({ recipe }: { recipe: RecipeWithDetails }) {
       <div className="grid gap-4 p-4">
         <div>
           <h2 className="line-clamp-2 text-lg font-semibold">{recipe.title}</h2>
-          <p className="mt-1 line-clamp-2 text-sm leading-6 text-[#6d6257]">
+          <p className="mt-1 line-clamp-2 text-sm leading-6 text-body">
             {recipe.description}
           </p>
         </div>
-        <div className="flex flex-wrap gap-2 text-sm text-[#5f554c]">
+        <div className="flex flex-wrap gap-2 text-sm text-muted">
           <span className="inline-flex items-center gap-1">
             <Clock className="h-4 w-4" aria-hidden="true" />
             {formatDuration(recipe.totalTimeMinutes)}
@@ -39,7 +39,7 @@ export function RecipeCard({ recipe }: { recipe: RecipeWithDetails }) {
             </>
           )}
           <span className="inline-flex items-center gap-1">
-            <Star className="h-4 w-4 text-brass" aria-hidden="true" />
+            <Star className="h-4 w-4 text-brand-ochre" aria-hidden="true" />
             {recipe.averageRating ? recipe.averageRating.toFixed(1) : "Nouveau"}
           </span>
         </div>
@@ -52,7 +52,7 @@ export function RecipeCard({ recipe }: { recipe: RecipeWithDetails }) {
         </div>
         <Link
           href={`/recipes/${recipe.id}`}
-          className="focus-ring inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-cream px-4 text-sm font-medium transition hover:bg-[#e8dfcf]"
+          className="focus-ring inline-flex h-11 w-full items-center justify-center gap-2 rounded-md border border-hairline bg-canvas px-4 text-sm font-medium transition hover:bg-surface-card"
         >
           <Eye className="h-4 w-4" aria-hidden="true" />
           Voir

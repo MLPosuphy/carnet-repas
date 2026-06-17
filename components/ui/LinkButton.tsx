@@ -14,16 +14,16 @@ export function LinkButton({
   className?: string;
 }) {
   const variants = {
-    primary: "bg-ink text-white hover:bg-[#3a342f]",
-    secondary: "bg-cream text-ink hover:bg-[#e8dfcf]",
-    ghost: "bg-transparent text-ink hover:bg-cream"
+    primary: "border border-ink bg-ink text-on-primary hover:bg-primary-active",
+    secondary: "border border-hairline bg-canvas text-ink hover:bg-surface-card",
+    ghost: "border border-transparent bg-transparent text-ink hover:bg-surface-card"
   };
 
   return (
     <Link
       href={href}
       className={cn(
-        "focus-ring inline-flex h-10 items-center justify-center gap-2 rounded-md px-4 text-sm font-medium transition",
+        "focus-ring inline-flex h-11 items-center justify-center gap-2 rounded-md px-5 text-sm font-medium transition",
         variants[variant],
         className
       )}

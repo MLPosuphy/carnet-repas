@@ -17,7 +17,7 @@ export function RecipeFilterBar({
   };
 
   return (
-    <form className="grid gap-3 rounded-lg border border-[#e3d8c7] bg-white p-4 shadow-soft lg:grid-cols-[1.4fr_1fr_1fr_1fr_0.8fr_1fr_1fr_auto]">
+    <form className="grid gap-3 rounded-lg border border-hairline bg-surface-card p-4 lg:grid-cols-[1.4fr_1fr_1fr_1fr_0.8fr_1fr_1fr_auto]">
       <SearchBar defaultValue={value("q")} placeholder="Nom ou description" />
       <Select name="tag" defaultValue={value("tag")}>
         <option value="">Tous les tags</option>

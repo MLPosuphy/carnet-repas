@@ -3802,7 +3802,7 @@
       "title": "Healthy",
       "description": "Idées du fichier Excel orientées repas simples et plutôt équilibrés.",
       "coverImageUrl": null,
-      "color": "#6d8a6f",
+      "color": "#ff4d8b",
       "sortOrder": 0
     },
     {
@@ -3810,7 +3810,7 @@
       "title": "Salades",
       "description": "Salades et assiettes fraîches importées depuis le tableur.",
       "coverImageUrl": null,
-      "color": "#4d638c",
+      "color": "#1a3a3a",
       "sortOrder": 1
     },
     {
@@ -3818,7 +3818,7 @@
       "title": "Classiques",
       "description": "Plats de tous les jours et classiques maison à compléter.",
       "coverImageUrl": null,
-      "color": "#b78943",
+      "color": "#b8a4ed",
       "sortOrder": 2
     },
     {
@@ -3826,7 +3826,7 @@
       "title": "Pas healthy",
       "description": "Repas plaisir, fromage, fast-food maison et plats réconfortants.",
       "coverImageUrl": null,
-      "color": "#c9573f",
+      "color": "#ffb084",
       "sortOrder": 3
     },
     {
@@ -3834,7 +3834,7 @@
       "title": "Gâteaux",
       "description": "Desserts et pâtisseries listés dans le fichier Excel.",
       "coverImageUrl": null,
-      "color": "#8a6d7d",
+      "color": "#e8b94a",
       "sortOrder": 4
     }
   ],
@@ -3842,7 +3842,7 @@
     {
       "id": "cmqggb4do0081ryqc8k86koby",
       "name": "courgettes",
-      "quantity": 2.0,
+      "quantity": 2,
       "unit": "pièces",
       "location": "fridge",
       "expirationDate": null
@@ -3850,7 +3850,7 @@
     {
       "id": "cmqggb4do0084ryqcff5txgl7",
       "name": "fromage râpé",
-      "quantity": 150.0,
+      "quantity": 150,
       "unit": "g",
       "location": "fridge",
       "expirationDate": null
@@ -3858,7 +3858,7 @@
     {
       "id": "cmqggb4do007zryqcnttr1rd6",
       "name": "oeufs",
-      "quantity": 6.0,
+      "quantity": 6,
       "unit": "pièces",
       "location": "fridge",
       "expirationDate": null
@@ -3866,7 +3866,7 @@
     {
       "id": "cmqggb4do0083ryqcfctbp3pq",
       "name": "pâtes",
-      "quantity": 500.0,
+      "quantity": 500,
       "unit": "g",
       "location": "pantry",
       "expirationDate": null
@@ -3874,7 +3874,7 @@
     {
       "id": "cmqggb4do0082ryqcdv4hjzn2",
       "name": "riz",
-      "quantity": 500.0,
+      "quantity": 500,
       "unit": "g",
       "location": "pantry",
       "expirationDate": null
@@ -3882,7 +3882,7 @@
     {
       "id": "cmqggb4do0080ryqclo29eaoy",
       "name": "tomates",
-      "quantity": 4.0,
+      "quantity": 4,
       "unit": "pièces",
       "location": "fridge",
       "expirationDate": null

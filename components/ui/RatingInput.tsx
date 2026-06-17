@@ -21,7 +21,7 @@ export function RatingInput({
           <button
             key={value}
             type="button"
-            className="focus-ring rounded-md p-1 text-brass"
+            className="focus-ring rounded-md p-1 text-brand-ochre"
             onClick={() => setRating(value)}
             aria-label={`${value} sur 5`}
           >
