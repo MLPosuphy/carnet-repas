@@ -4,7 +4,11 @@
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#fffaf0",
-  "theme_color": "#fffaf0",
-  "description": "Carnet de recettes personnel compatible GitHub Pages"
+  "theme_color": "#c0703a",
+  "description": "Carnet de recettes familial, synchronisé via pCloud.",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
 }

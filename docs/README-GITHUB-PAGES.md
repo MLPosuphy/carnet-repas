@@ -1,23 +1,30 @@
 # Déploiement GitHub Pages
 
-Cette version statique vit dans `docs/`. Elle fonctionne sans serveur Next.js, sans Prisma et sans SQLite.
+Cette application est **100 % statique** : elle vit entièrement dans `docs/`.
+Aucun serveur, aucune base de données, aucun build.
 
 ## Activer GitHub Pages
 
-1. Pousse le dossier `docs/` sur GitHub.
-2. Dans le dépôt GitHub, ouvre `Settings` puis `Pages`.
-3. Dans `Build and deployment`, choisis `Deploy from a branch`.
-4. Sélectionne la branche principale, puis le dossier `/docs`.
-5. GitHub donnera une URL du type `https://compte.github.io/depot/`.
+1. Pousse le dossier `docs/` sur GitHub (branche `main`).
+2. Dans le dépôt : `Settings` → `Pages`.
+3. `Build and deployment` → `Deploy from a branch`.
+4. Branche `main`, dossier `/docs`.
+5. URL obtenue : `https://mlposuphy.github.io/carnet-repas/`.
 
-## Données
+## Données & synchro
 
-- `docs/carnet-recettes.json` contient les recettes initiales importées depuis Excel.
-- Les modifications sont sauvegardées dans le navigateur avec `localStorage`.
-- Le bouton `Exporter` télécharge un JSON complet.
-- Le bouton `Importer` remplace les données locales par un JSON.
-- Sur Chrome ou Edge, `Synchro > Dossier` peut écrire directement dans un dossier local synchronisé par pCloud, OneDrive ou équivalent.
+- `docs/carnet-recettes.json` est la **graine** : les recettes affichées au
+  tout premier chargement, avant toute connexion pCloud.
+- Ensuite, les données vivent :
+  - dans le **navigateur** (`localStorage`) pour un accès instantané et hors-ligne ;
+  - dans **pCloud** (`/Carnet repas/carnet-recettes.json`) pour la synchro
+    familiale (lecture + écriture, PC + mobile).
+- L'**export / import JSON** (onglet Synchro) sert de sauvegarde manuelle.
+
+➡️ Mise en place de la synchro : voir [`PCLOUD-SETUP.md`](PCLOUD-SETUP.md).
 
 ## Téléphone
 
-Sur téléphone, l'application reste accessible via GitHub Pages même quand l'ordinateur est éteint. Les modifications sont locales au navigateur du téléphone, sauf si ce navigateur permet l'accès à un dossier partagé ou si tu importes/exportes le JSON.
+L'app s'installe comme une PWA (Ajouter à l'écran d'accueil). Une fois pCloud
+connecté, on peut consulter **et** modifier les recettes depuis le téléphone,
+et tout se synchronise avec les autres appareils de la famille.

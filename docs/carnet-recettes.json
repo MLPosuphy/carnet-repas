@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "rev": 2,
-  "savedAt": "2026-06-17T09:34:22.694255Z",
-  "savedBy": "ChatGPT",
+  "rev": 5,
+  "savedAt": "2026-06-17T09:46:00.277Z",
+  "savedBy": "Navigateur",
   "recipes": [
     {
       "id": "cmqggb4cy007xryqc446826we",
@@ -13336,10 +13336,228 @@
       "expirationDate": null
     }
   ],
-  "shopping": [],
+  "shopping": [
+    {
+      "id": "shop_mqhvy3ji_mazbq2",
+      "name": "Pour le brownie : 150 g de chocolat noir",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_3c9siu",
+      "name": "100 g de beurre",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_cqpvht",
+      "name": "2 œufs",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_u9v9wo",
+      "name": "80 g de sucre",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_qa5xrw",
+      "name": "70 g de farine",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_s76lju",
+      "name": "Pour le cookie : 100 g de beurre mou",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_dr1irh",
+      "name": "100 g de sucre",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_p3km82",
+      "name": "1 œuf",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_6ot482",
+      "name": "150 g de farine",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvy3ji_2w56l3",
+      "name": "100 g de pépites de chocolat",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3w5006cryqc32zedgmo",
+      "recipeTitle": "Brookies"
+    },
+    {
+      "id": "shop_mqhvybld_4bukfr",
+      "name": "4 grandes tortillas",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_pxn7vd",
+      "name": "300 g de riz cuit",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_mwirtz",
+      "name": "400 g de viande hachée ou poulet",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_97cjfm",
+      "name": "Haricots rouges",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_w7p40b",
+      "name": "Maïs",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_sn4qni",
+      "name": "Sauce tomate épicée",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvybld_q93db6",
+      "name": "Fromage râpé",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3gb004iryqc1ex7zzk6",
+      "recipeTitle": "Burritos"
+    },
+    {
+      "id": "shop_mqhvyn6d_7bnrgb",
+      "name": "4 filets de poisson",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_n2bna3",
+      "name": "300 g de riz, pâtes ou pommes de terre",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_e7rthb",
+      "name": "1 citron",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_qd4kk6",
+      "name": "Huile d’olive",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_wrqvrb",
+      "name": "Légumes verts facultatifs",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_mi31m9",
+      "name": "Sel",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    },
+    {
+      "id": "shop_mqhvyn6d_mlfjzf",
+      "name": "Poivre",
+      "quantity": null,
+      "unit": "",
+      "checked": false,
+      "recipeId": "cmqggb3cm0043ryqcagpy7t2i",
+      "recipeTitle": "Féculents et poisson"
+    }
+  ],
   "mealPlan": [],
   "settings": {
     "name": "Mateo",
-    "defaultServings": 4
+    "defaultServings": 4,
+    "remoteUrl": ""
   }
 }

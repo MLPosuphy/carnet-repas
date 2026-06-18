@@ -1,76 +1,53 @@
-# Recipe Book App
+# Carnet repas
 
-Application de livre de cuisine personnalisé.
+Carnet de recettes **familial**, 100 % statique, synchronisé via **pCloud**.
+Pas de serveur, pas de base de données, pas de build : tout est dans `docs/`.
 
-## Installation
+## Lancer en local
 
-```bash
-npm install
-```
-
-## Base de données
+Sers le dossier `docs/` avec n'importe quel serveur statique, par ex. :
 
 ```bash
-npx prisma migrate dev
-npx prisma db seed
+cd docs
+python -m http.server 8080
+# puis ouvre http://localhost:8080/
 ```
 
-## Lancement
+> Ouvrir `index.html` en `file://` ne suffit pas (service worker + fetch).
 
-```bash
-npm run dev
-```
+## Déploiement
 
-L'application sera disponible sur `http://127.0.0.1:3000` si tu gardes le port par défaut.
+GitHub Pages depuis le dossier `/docs` de la branche `main`.
+URL : `https://mlposuphy.github.io/carnet-repas/`.
+Détails : [`docs/README-GITHUB-PAGES.md`](docs/README-GITHUB-PAGES.md).
 
-## Version GitHub Pages
+## Synchronisation pCloud
 
-Une version statique gratuite est disponible dans `docs/`.
-Elle peut être publiée avec GitHub Pages en choisissant le dossier `/docs`.
-Voir `docs/README-GITHUB-PAGES.md`.
-
-Pour une prévisualisation stable sur ce workspace Windows, tu peux aussi lancer :
-
-```bash
-npm run build
-npm run start
-```
-
-## Note Windows
-
-Les scripts `dev`, `build` et `start` chargent `scripts/patch-readlink-eisdir.cjs`.
-Ce petit correctif contourne un comportement du lecteur `P:` où Node renvoie `EISDIR`
-quand Next/Webpack vérifie certains fichiers avec `readlink`.
-
-Évite de créer un fichier de log dans la racine du projet pendant `npm run dev` :
-Next surveille le dossier et peut recompiler en boucle si le log change en continu.
+Lecture **et** écriture, sur PC **et** mobile, pour toute la famille,
+via l'API pCloud (OAuth). Configuration en une fois :
+[`docs/PCLOUD-SETUP.md`](docs/PCLOUD-SETUP.md).
 
 ## Fonctionnalités
 
-- Gestion des recettes
-- Ingrédients et étapes dynamiques
-- Ajustement des portions
-- Chapitres
-- Frigo / placard
-- Recommandations
-- Liste de courses
-- Planning repas
-- Mode cuisson
-- Sessions de cuisson avec note et commentaire
+- Recettes : ingrédients & étapes, photos, chapitres, tags, recherche, filtres
+- Ajustement des portions (recalcul des quantités)
+- Liste de courses intelligente (fusion des doublons + regroupement par rayon)
+- Placard / frigo + recommandations « que cuisiner ? »
+- Planning de la semaine (navigation par semaine, envoi vers les courses)
+- Mode cuisson plein écran avec minuteurs
+- Notation & historique de cuisson
+- Thème clair / sombre, PWA installable, annulation des suppressions
+- Sauvegarde manuelle export / import JSON
 
-## Stack
+## Structure
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Prisma
-- SQLite
-
-## Roadmap
-
-- Import texte
-- Import URL
-- OCR
-- Export PDF
-- Nutrition
-- Collaboration familiale
+```
+docs/
+  index.html      coquille HTML + anti-flash thème
+  style.css       design (clair + sombre, responsive, impression)
+  app.js          toute la logique (données, synchro pCloud, vues)
+  sw.js           service worker (hors-ligne)
+  manifest.webmanifest, icon.svg
+  carnet-recettes.json   graine de premier chargement
+  PCLOUD-SETUP.md        guide de configuration pCloud
+```
