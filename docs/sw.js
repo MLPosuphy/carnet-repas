@@ -1,4 +1,4 @@
-const CACHE_NAME = "carnet-repas-v3";
+const CACHE_NAME = "carnet-repas-v4";
 const STATIC_ASSETS = [
   "./",
   "./index.html",

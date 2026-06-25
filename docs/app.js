@@ -58,6 +58,164 @@
   }
   const AISLE_ORDER = [...AISLES.map((a) => a[0]), "Autres"];
 
+  /* ====================================================================== *
+   * RÉFÉRENTIEL D'ALIMENTS (valeurs caloriques) — graine livrée avec l'app.
+   * kcal100 = kcal pour 100 g. g = grammes par pièce/unité. cs/cc = grammes
+   * par cuillère à soupe / à café. d = densité (g par ml) pour les liquides.
+   * Valeurs indicatives (proches CIQUAL) pour une *estimation*.
+   * ====================================================================== */
+  function food(id, name, aisle, kcal100, opts) {
+    const o = opts || {};
+    return {
+      id, name, aisle, kcal100,
+      aliases: o.aliases || [],
+      gPerPiece: o.g ?? null,
+      gPerCs: o.cs ?? null,
+      gPerCc: o.cc ?? null,
+      density: o.d ?? null,
+      builtin: true,
+    };
+  }
+  const FOOD_SEED = [
+    // — Épicerie sucrée / pâtisserie —
+    food("fd_farine", "Farine", "Épicerie salée", 364, { aliases: ["farine de blé", "farine t45", "farine t55", "farine t65", "farine de ble"], cs: 9, cc: 3 }),
+    food("fd_maizena", "Maïzena", "Épicerie salée", 350, { aliases: ["fécule", "fecule", "fécule de maïs", "amidon"], cs: 8, cc: 3 }),
+    food("fd_sucre", "Sucre", "Épicerie sucrée", 400, { aliases: ["sucre en poudre", "sucre semoule", "sucre blanc"], cs: 12, cc: 4 }),
+    food("fd_sucre_glace", "Sucre glace", "Épicerie sucrée", 398, { aliases: ["sucre glace"], cs: 8, cc: 3 }),
+    food("fd_cassonade", "Cassonade", "Épicerie sucrée", 380, { aliases: ["sucre roux", "vergeoise"], cs: 12, cc: 4 }),
+    food("fd_sucre_vanille", "Sucre vanillé", "Épicerie sucrée", 390, { aliases: ["sucre vanille"], g: 7 }),
+    food("fd_levure_chim", "Levure chimique", "Épicerie sucrée", 70, { aliases: ["levure", "poudre à lever", "bicarbonate"], cc: 4, g: 11 }),
+    food("fd_levure_boul", "Levure de boulanger", "Épicerie sucrée", 105, { aliases: ["levure fraîche", "levure sèche"], g: 7 }),
+    food("fd_cacao", "Cacao en poudre", "Épicerie sucrée", 350, { aliases: ["cacao", "chocolat en poudre"], cs: 7, cc: 3 }),
+    food("fd_choc_noir", "Chocolat noir", "Épicerie sucrée", 540, { aliases: ["chocolat", "chocolat pâtissier", "chocolat patissier"] }),
+    food("fd_choc_lait", "Chocolat au lait", "Épicerie sucrée", 535, {}),
+    food("fd_pepites", "Pépites de chocolat", "Épicerie sucrée", 500, { aliases: ["pepites de chocolat"] }),
+    food("fd_miel", "Miel", "Épicerie sucrée", 304, { aliases: ["miel"], d: 1.4, cs: 21, cc: 7 }),
+    food("fd_sirop_erable", "Sirop d'érable", "Épicerie sucrée", 260, { aliases: ["sirop d erable", "sirop d’érable"], d: 1.32 }),
+    food("fd_confiture", "Confiture", "Épicerie sucrée", 270, { aliases: ["gelée", "marmelade"], cs: 20 }),
+    food("fd_pate_tartiner", "Pâte à tartiner", "Épicerie sucrée", 540, { aliases: ["nutella"], cs: 20 }),
+    food("fd_poudre_amande", "Poudre d'amandes", "Épicerie sucrée", 620, { aliases: ["poudre d amandes", "poudre d’amandes", "poudre d amande"] }),
+    food("fd_amande", "Amandes", "Épicerie sucrée", 600, { aliases: ["amande"] }),
+    food("fd_noisette", "Noisettes", "Épicerie sucrée", 630, { aliases: ["noisette"] }),
+    food("fd_noix", "Noix", "Épicerie sucrée", 650, {}),
+    food("fd_coco_rape", "Noix de coco râpée", "Épicerie sucrée", 660, { aliases: ["noix de coco", "coco râpée", "coco rapee"] }),
+    food("fd_flocons_avoine", "Flocons d'avoine", "Épicerie sucrée", 370, { aliases: ["flocons d avoine", "avoine"] }),
+    food("fd_biscuit", "Biscuits", "Épicerie sucrée", 470, { aliases: ["spéculoos", "speculoos", "petit-beurre", "sablé"] }),
+    food("fd_vanille", "Extrait de vanille", "Épicerie sucrée", 12, { aliases: ["vanille", "arôme vanille"], cc: 4 }),
+    // — Crèmerie & œufs —
+    food("fd_lait", "Lait", "Crèmerie & œufs", 47, { aliases: ["lait entier", "lait demi-écrémé", "lait demi ecreme"], d: 1.03 }),
+    food("fd_creme_epaisse", "Crème fraîche", "Crèmerie & œufs", 290, { aliases: ["crème", "creme fraiche", "crème épaisse", "creme epaisse"], cs: 15, d: 1 }),
+    food("fd_creme_liquide", "Crème liquide", "Crèmerie & œufs", 200, { aliases: ["crème liquide", "creme liquide", "crème fleurette"], d: 1 }),
+    food("fd_beurre", "Beurre", "Crèmerie & œufs", 750, { aliases: ["beurre doux", "beurre demi-sel"], cs: 14, cc: 5 }),
+    food("fd_margarine", "Margarine", "Crèmerie & œufs", 720, {}),
+    food("fd_yaourt", "Yaourt", "Crèmerie & œufs", 60, { aliases: ["yaourt nature", "yogourt"], g: 125 }),
+    food("fd_fromage_blanc", "Fromage blanc", "Crèmerie & œufs", 75, { aliases: ["fromage blanc", "petit suisse"] }),
+    food("fd_oeuf", "Œuf", "Crèmerie & œufs", 145, { aliases: ["oeuf", "œufs", "oeufs", "oeuf entier"], g: 50 }),
+    food("fd_jaune", "Jaune d'œuf", "Crèmerie & œufs", 322, { aliases: ["jaune d oeuf", "jaune d’œuf", "jaunes d oeufs", "jaune"], g: 18 }),
+    food("fd_blanc", "Blanc d'œuf", "Crèmerie & œufs", 52, { aliases: ["blanc d oeuf", "blanc d’œuf", "blancs d oeufs", "blancs en neige", "blanc"], g: 33 }),
+    food("fd_parmesan", "Parmesan", "Crèmerie & œufs", 400, { aliases: ["parmesan râpé", "grana"], cs: 6 }),
+    food("fd_gruyere", "Gruyère", "Crèmerie & œufs", 360, { aliases: ["emmental", "fromage râpé", "fromage rape", "gruyère râpé"], cs: 7 }),
+    food("fd_comte", "Comté", "Crèmerie & œufs", 410, { aliases: ["comte"] }),
+    food("fd_mozza", "Mozzarella", "Crèmerie & œufs", 280, { aliases: ["mozzarella"], g: 125 }),
+    food("fd_ricotta", "Ricotta", "Crèmerie & œufs", 150, {}),
+    food("fd_mascarpone", "Mascarpone", "Crèmerie & œufs", 355, {}),
+    food("fd_feta", "Feta", "Crèmerie & œufs", 260, {}),
+    food("fd_chevre", "Chèvre", "Crèmerie & œufs", 290, { aliases: ["fromage de chèvre", "buche de chevre"] }),
+    // — Boucherie & poisson —
+    food("fd_poulet", "Poulet", "Boucherie & poisson", 120, { aliases: ["blanc de poulet", "escalope de poulet", "filet de poulet", "cuisse de poulet"] }),
+    food("fd_boeuf", "Bœuf", "Boucherie & poisson", 180, { aliases: ["boeuf", "steak", "bavette", "rumsteck"] }),
+    food("fd_boeuf_hache", "Bœuf haché", "Boucherie & poisson", 220, { aliases: ["boeuf hache", "steak haché", "steak hache", "viande hachée", "viande hachee"] }),
+    food("fd_porc", "Porc", "Boucherie & poisson", 240, { aliases: ["côte de porc", "filet mignon", "échine"] }),
+    food("fd_veau", "Veau", "Boucherie & poisson", 170, {}),
+    food("fd_agneau", "Agneau", "Boucherie & poisson", 230, { aliases: ["gigot", "côte d agneau"] }),
+    food("fd_dinde", "Dinde", "Boucherie & poisson", 110, { aliases: ["escalope de dinde", "blanc de dinde"] }),
+    food("fd_saucisse", "Saucisse", "Boucherie & poisson", 290, { aliases: ["chipolata", "merguez"], g: 70 }),
+    food("fd_lardon", "Lardons", "Boucherie & poisson", 280, { aliases: ["lardon", "poitrine fumée"] }),
+    food("fd_jambon", "Jambon", "Boucherie & poisson", 120, { aliases: ["jambon blanc", "tranche de jambon"], g: 40 }),
+    food("fd_bacon", "Bacon", "Boucherie & poisson", 250, { g: 12 }),
+    food("fd_chorizo", "Chorizo", "Boucherie & poisson", 450, {}),
+    food("fd_saumon", "Saumon", "Boucherie & poisson", 200, { aliases: ["pavé de saumon", "filet de saumon", "saumon fumé"], g: 130 }),
+    food("fd_thon", "Thon", "Boucherie & poisson", 130, { aliases: ["thon en boîte", "thon au naturel"] }),
+    food("fd_cabillaud", "Cabillaud", "Boucherie & poisson", 80, { aliases: ["colin", "merlu", "lieu", "dos de cabillaud"] }),
+    food("fd_crevette", "Crevettes", "Boucherie & poisson", 90, { aliases: ["crevette", "gambas"] }),
+    food("fd_canard", "Magret de canard", "Boucherie & poisson", 330, { aliases: ["magret", "canard"] }),
+    // — Fruits & légumes —
+    food("fd_tomate", "Tomate", "Fruits & légumes", 18, { aliases: ["tomates"], g: 120 }),
+    food("fd_oignon", "Oignon", "Fruits & légumes", 40, { aliases: ["oignons", "oignon rouge"], g: 110 }),
+    food("fd_ail", "Ail", "Fruits & légumes", 140, { aliases: ["gousse d ail", "gousses d ail", "gousse d’ail"], g: 5 }),
+    food("fd_echalote", "Échalote", "Fruits & légumes", 72, { aliases: ["echalote", "échalotes"], g: 30 }),
+    food("fd_carotte", "Carotte", "Fruits & légumes", 35, { aliases: ["carottes"], g: 70 }),
+    food("fd_pdt", "Pomme de terre", "Fruits & légumes", 80, { aliases: ["pommes de terre", "patate"], g: 150 }),
+    food("fd_patate_douce", "Patate douce", "Fruits & légumes", 86, {}),
+    food("fd_courgette", "Courgette", "Fruits & légumes", 17, { aliases: ["courgettes"], g: 200 }),
+    food("fd_aubergine", "Aubergine", "Fruits & légumes", 25, { aliases: ["aubergines"], g: 250 }),
+    food("fd_poivron", "Poivron", "Fruits & légumes", 25, { aliases: ["poivrons"], g: 150 }),
+    food("fd_champignon", "Champignons", "Fruits & légumes", 22, { aliases: ["champignon", "champignon de paris"], g: 15 }),
+    food("fd_brocoli", "Brocoli", "Fruits & légumes", 34, {}),
+    food("fd_chou_fleur", "Chou-fleur", "Fruits & légumes", 25, { aliases: ["chou fleur"] }),
+    food("fd_epinard", "Épinards", "Fruits & légumes", 23, { aliases: ["epinards", "épinard"] }),
+    food("fd_salade", "Salade", "Fruits & légumes", 15, { aliases: ["laitue", "roquette", "mâche", "mache"] }),
+    food("fd_concombre", "Concombre", "Fruits & légumes", 12, { g: 300 }),
+    food("fd_haricot_vert", "Haricots verts", "Fruits & légumes", 31, { aliases: ["haricot vert"] }),
+    food("fd_petit_pois", "Petits pois", "Fruits & légumes", 80, { aliases: ["petit pois", "petits pois surgelés"] }),
+    food("fd_poireau", "Poireau", "Fruits & légumes", 30, { aliases: ["poireaux"], g: 150 }),
+    food("fd_courge", "Courge", "Fruits & légumes", 26, { aliases: ["potiron", "potimarron", "butternut"] }),
+    food("fd_gingembre", "Gingembre", "Fruits & légumes", 80, {}),
+    food("fd_citron", "Citron", "Fruits & légumes", 30, { aliases: ["jus de citron"], g: 100 }),
+    food("fd_citron_vert", "Citron vert", "Fruits & légumes", 30, { aliases: ["lime"], g: 70 }),
+    food("fd_orange", "Orange", "Fruits & légumes", 47, { aliases: ["oranges", "jus d orange"], g: 150 }),
+    food("fd_pomme", "Pomme", "Fruits & légumes", 52, { aliases: ["pommes"], g: 150 }),
+    food("fd_banane", "Banane", "Fruits & légumes", 90, { aliases: ["bananes"], g: 120 }),
+    food("fd_poire", "Poire", "Fruits & légumes", 57, { aliases: ["poires"], g: 160 }),
+    food("fd_fraise", "Fraises", "Fruits & légumes", 33, { aliases: ["fraise"] }),
+    food("fd_framboise", "Framboises", "Fruits & légumes", 50, { aliases: ["framboise"] }),
+    food("fd_myrtille", "Myrtilles", "Fruits & légumes", 57, { aliases: ["myrtille"] }),
+    food("fd_avocat", "Avocat", "Fruits & légumes", 160, { g: 170 }),
+    food("fd_mangue", "Mangue", "Fruits & légumes", 60, { g: 200 }),
+    food("fd_ananas", "Ananas", "Fruits & légumes", 50, {}),
+    food("fd_persil", "Persil", "Fruits & légumes", 36, { aliases: ["basilic", "coriandre", "menthe", "ciboulette", "herbes"] }),
+    // — Épicerie salée —
+    food("fd_riz", "Riz", "Épicerie salée", 350, { aliases: ["riz basmati", "riz blanc", "riz complet"] }),
+    food("fd_pates", "Pâtes", "Épicerie salée", 360, { aliases: ["pâte", "spaghetti", "penne", "tagliatelle", "macaroni", "coquillettes"] }),
+    food("fd_semoule", "Semoule", "Épicerie salée", 360, { aliases: ["couscous"] }),
+    food("fd_lentille", "Lentilles", "Épicerie salée", 335, { aliases: ["lentille"] }),
+    food("fd_pois_chiche", "Pois chiches", "Épicerie salée", 140, { aliases: ["pois chiche"] }),
+    food("fd_haricot_rouge", "Haricots rouges", "Épicerie salée", 120, { aliases: ["haricot rouge"] }),
+    food("fd_quinoa", "Quinoa", "Épicerie salée", 360, {}),
+    food("fd_boulgour", "Boulgour", "Épicerie salée", 350, { aliases: ["boulghour"] }),
+    food("fd_huile_olive", "Huile d'olive", "Épicerie salée", 900, { aliases: ["huile d olive", "huile d’olive"], d: 0.91, cs: 13, cc: 5 }),
+    food("fd_huile", "Huile", "Épicerie salée", 900, { aliases: ["huile de tournesol", "huile végétale", "huile vegetale"], d: 0.92, cs: 13, cc: 5 }),
+    food("fd_vinaigre", "Vinaigre", "Épicerie salée", 20, { aliases: ["vinaigre de cidre", "vinaigre de vin"], d: 1.01, cs: 15 }),
+    food("fd_balsamique", "Vinaigre balsamique", "Épicerie salée", 90, { aliases: ["balsamique"], d: 1.05, cs: 16 }),
+    food("fd_soja", "Sauce soja", "Épicerie salée", 60, { aliases: ["sauce soja", "soja"], d: 1.1, cs: 16 }),
+    food("fd_moutarde", "Moutarde", "Épicerie salée", 150, { cs: 16, cc: 5 }),
+    food("fd_mayo", "Mayonnaise", "Épicerie salée", 700, { cs: 15 }),
+    food("fd_ketchup", "Ketchup", "Épicerie salée", 110, { cs: 17 }),
+    food("fd_concentre", "Concentré de tomate", "Épicerie salée", 80, { aliases: ["concentre de tomate"], cs: 16 }),
+    food("fd_tomate_pelee", "Tomates pelées", "Épicerie salée", 30, { aliases: ["tomates pelees", "tomate concassée", "tomates concassées", "passata", "coulis de tomate"] }),
+    food("fd_lait_coco", "Lait de coco", "Épicerie salée", 200, { aliases: ["lait de coco"], d: 0.98 }),
+    food("fd_olive", "Olives", "Épicerie salée", 150, { aliases: ["olive"] }),
+    food("fd_mais", "Maïs", "Épicerie salée", 90, { aliases: ["mais"] }),
+    food("fd_chapelure", "Chapelure", "Épicerie salée", 380, { cs: 8 }),
+    food("fd_polenta", "Polenta", "Épicerie salée", 360, { aliases: ["semoule de maïs"] }),
+    food("fd_bouillon", "Bouillon", "Épicerie salée", 10, { aliases: ["bouillon cube", "cube de bouillon", "fond de veau"] }),
+    food("fd_sel", "Sel", "Épicerie salée", 0, { aliases: ["fleur de sel", "gros sel"], cc: 6 }),
+    food("fd_poivre", "Poivre", "Épicerie salée", 250, { cc: 3 }),
+    // — Boulangerie —
+    food("fd_pain", "Pain", "Boulangerie", 260, { aliases: ["baguette", "pain de mie"] }),
+    food("fd_pate_feuille", "Pâte feuilletée", "Boulangerie", 380, { aliases: ["pate feuilletee"], g: 230 }),
+    food("fd_pate_brisee", "Pâte brisée", "Boulangerie", 350, { aliases: ["pate brisee"], g: 230 }),
+    food("fd_pate_sablee", "Pâte sablée", "Boulangerie", 440, { aliases: ["pate sablee"], g: 230 }),
+    food("fd_pate_pizza", "Pâte à pizza", "Boulangerie", 270, { aliases: ["pate a pizza"], g: 260 }),
+    food("fd_tortilla", "Tortilla", "Boulangerie", 300, { aliases: ["wrap", "galette de blé"], g: 50 }),
+    food("fd_brioche", "Brioche", "Boulangerie", 330, {}),
+    // — Boissons —
+    food("fd_eau", "Eau", "Boissons", 0, { d: 1 }),
+    food("fd_vin_blanc", "Vin blanc", "Boissons", 82, { aliases: ["vin"], d: 0.99 }),
+    food("fd_vin_rouge", "Vin rouge", "Boissons", 85, { d: 0.99 }),
+    food("fd_biere", "Bière", "Boissons", 45, { aliases: ["biere"], d: 1 }),
+  ];
+
   /* ------------------------------- Icônes SVG ----------------------------- */
   const ICONS = {
     home: '<path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/>',
@@ -88,6 +246,8 @@
     sparkles: '<path d="M12 4l1.6 4L18 9.6 13.6 11 12 15l-1.6-4L6 9.6 10.4 8z"/><path d="M18 14l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>',
     link: '<path d="M9 15l6-6"/><path d="M11 7l1-1a3.5 3.5 0 0 1 5 5l-1 1"/><path d="M13 17l-1 1a3.5 3.5 0 0 1-5-5l1-1"/>',
     back: '<path d="M11 6 5 12l6 6"/><path d="M5 12h14"/>',
+    apple: '<path d="M12 8c-1.6-2.2-4.2-2.6-5.8-1.1C4.4 8.6 5 13 7.6 16c1 1.2 2 2 4.4 2s3.4-.8 4.4-2c2.6-3 3.2-7.4 1.4-9.1-1.6-1.5-4.2-1.1-5.8 1.1z"/><path d="M12 8c0-2 .6-3.6 2.6-4.6"/>',
+    plate: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/>',
   };
   function icon(name, cls) {
     const body = ICONS[name] || "";
@@ -109,7 +269,7 @@
   let undoTimer = null;
   let cook = null; // état du mode cuisson { recipeId, index, timers }
 
-  const ui = { search: "", chapter: "all", status: "all", planWeek: 0 };
+  const ui = { search: "", chapter: "all", status: "all", planWeek: 0, foodSearch: "", editFood: null };
 
   const pcloud = { token: null, host: null, email: null, userid: null, connected: false };
 
@@ -219,6 +379,17 @@
       chapters: asArray(r.chapters),
     }));
 
+    // Référentiel d'aliments : on conserve les entrées existantes (y compris
+    // les modifications de l'utilisateur) et on complète avec les aliments de
+    // base manquants, sauf ceux que l'utilisateur a explicitement supprimés.
+    const removedFoods = asArray(base.removedFoods);
+    const existingFoods = asArray(base.foods);
+    const haveFoodIds = new Set(existingFoods.map((f) => f.id));
+    const seededFoods = FOOD_SEED
+      .filter((f) => !haveFoodIds.has(f.id) && !removedFoods.includes(f.id))
+      .map((f) => ({ ...f, aliases: [...f.aliases] }));
+    const foods = [...existingFoods, ...seededFoods];
+
     return {
       schemaVersion: 2,
       rev: Number(base.rev) || 1,
@@ -230,6 +401,8 @@
       shopping: asArray(base.shopping),
       mealPlan: asArray(base.mealPlan),
       cookSessions: asArray(base.cookSessions),
+      foods,
+      removedFoods,
       settings: {
         name: "Mateo",
         defaultServings: 4,
@@ -683,6 +856,130 @@
     return scaleIngredientText(ingredientText(item), factor);
   }
 
+  /* ====================================================================== *
+   * NUTRITION — estimation des calories par plat
+   * ====================================================================== */
+  function allFoods() {
+    return asArray(state.foods);
+  }
+  function foodById(id) {
+    return allFoods().find((f) => f.id === id) || null;
+  }
+  const FOOD_ARTICLES = /^(de |d'|du |des |aux |au |a |la |le |les |l'|un |une |quelque[s]? |environ )/;
+  // Nettoie un nom d'ingrédient pour la mise en correspondance avec le référentiel.
+  function normFood(s) {
+    let n = normalizeName(s).replace(/['’`]/g, "'");
+    let prev;
+    do { prev = n; n = n.replace(FOOD_ARTICLES, ""); } while (n !== prev);
+    return n.trim();
+  }
+  // Trouve l'aliment du référentiel correspondant le mieux à un nom libre.
+  function matchFood(name) {
+    const n = normFood(name);
+    if (!n || n.length < 2) return null;
+    let best = null, bestScore = 0;
+    for (const f of allFoods()) {
+      const keys = [f.name, ...asArray(f.aliases)].map(normFood).filter(Boolean);
+      for (const k of keys) {
+        let score = 0;
+        if (n === k) score = 1000 + k.length;
+        else if (n.includes(k)) score = k.length;          // l'ingrédient contient le mot-clé
+        else if (k.includes(n)) score = Math.max(1, n.length - 1);
+        if (score > bestScore) { bestScore = score; best = f; }
+      }
+    }
+    return bestScore >= 3 ? best : null; // évite les correspondances trop courtes/hasardeuses
+  }
+
+  function isUnitToken(tok) {
+    return KNOWN_UNITS.has(String(tok || "").toLowerCase().replace(/[.,;:]+$/, ""));
+  }
+  // Décompose « 200 g de farine | tamisée » → { quantity, unit, name, note }.
+  function parseIngredientLine(line) {
+    const [mainRaw, note] = String(line || "").split("|").map((s) => s.trim());
+    const main = mainRaw || "";
+    const parts = main.split(/\s+/).filter(Boolean);
+    let quantity = null, unit = "", name = main;
+    const first = parts[0] || "";
+    const numMatch = first.match(/^(\d+(?:[.,]\d+)?)(?:\/(\d+))?$/);
+    if (numMatch) {
+      quantity = numMatch[2]
+        ? Number(numMatch[1].replace(",", ".")) / Number(numMatch[2])
+        : Number(numMatch[1].replace(",", "."));
+      let rest = parts.slice(1);
+      if (rest[0] && isUnitToken(rest[0])) { unit = rest[0]; rest = rest.slice(1); }
+      name = rest.join(" ");
+    }
+    return { quantity, unit, name: name || main, note: note || null };
+  }
+
+  const VOLUME_ML = { ml: 1, cl: 10, dl: 100, l: 1000, verre: 200, verres: 200 };
+  const PIECE_UNITS = new Set([
+    "", "pièce", "pièces", "piece", "pieces", "gousse", "gousses", "tranche", "tranches",
+    "filet", "filets", "feuille", "feuilles", "branche", "branches", "sachet", "sachets",
+    "boîte", "boîtes", "boite", "boites", "pot", "pots", "pincée", "pincées", "pincee",
+  ]);
+  // Convertit une quantité + unité en grammes pour un aliment donné (ou null).
+  function toGrams(qty, unit, food) {
+    if (!Number.isFinite(qty)) return null;
+    const u = String(unit || "").toLowerCase().replace(/[.,;:]+$/, "");
+    if (["g", "gr", "gramme", "grammes"].includes(u)) return qty;
+    if (u === "kg") return qty * 1000;
+    if (u === "mg") return qty / 1000;
+    if (VOLUME_ML[u] != null) return qty * VOLUME_ML[u] * (food?.density ?? 1);
+    const isSoup = ["cs", "càs", "c.à.s", "cuillère", "cuillères", "cuillerée", "cuillerées", "cuilleree", "cuillerees"].includes(u);
+    const isTea = ["cc", "càc", "c.à.c"].includes(u);
+    if (isSoup) return qty * (food?.gPerCs ?? 15 * (food?.density ?? 0.6));
+    if (isTea) return qty * (food?.gPerCc ?? 5 * (food?.density ?? 0.6));
+    if (PIECE_UNITS.has(u)) return food?.gPerPiece != null ? qty * food.gPerPiece : null;
+    return null;
+  }
+
+  // kcal d'un ingrédient (objet recette), ou null si non estimable.
+  function ingredientKcal(item) {
+    let p;
+    if (item.quantity != null && item.quantity !== "") {
+      p = { quantity: Number(item.quantity), unit: item.unit || "", name: item.name || ingredientText(item) };
+    } else {
+      p = parseIngredientLine(ingredientText(item));
+    }
+    if (!Number.isFinite(p.quantity)) return null;
+    const food = (item.foodId && foodById(item.foodId)) || matchFood(p.name);
+    if (!food) return null;
+    const grams = toGrams(p.quantity, p.unit, food);
+    if (grams == null) return null;
+    return { kcal: (grams * food.kcal100) / 100, food, grams };
+  }
+
+  // Estimation calorique d'une recette : total + par portion + couverture.
+  function recipeCalories(recipe) {
+    const items = asArray(recipe.ingredients);
+    let total = 0, counted = 0;
+    for (const it of items) {
+      const r = ingredientKcal(it);
+      if (r) { total += r.kcal; counted++; }
+    }
+    const servings = Number(recipe.servings) || 1;
+    return {
+      total, perPortion: total / servings, counted, tracked: items.length,
+      complete: items.length > 0 && counted === items.length,
+    };
+  }
+  function kcalBadge(recipe) {
+    const est = recipeCalories(recipe);
+    if (!est.counted) return "";
+    return `<span>${icon("flame")} ≈ ${Math.round(est.perPortion)} kcal/portion${est.complete ? "" : " <span class=\"muted\">~</span>"}</span>`;
+  }
+  // Ligne d'estimation affichée sous le champ ingrédients du formulaire.
+  function kcalLineHtml(ingredients, servings) {
+    const est = recipeCalories({ ingredients, servings });
+    if (!est.counted) {
+      return `<span class="muted small">${icon("flame")} Indique des quantités (ex. « 200 g de farine ») pour estimer les calories.</span>`;
+    }
+    return `<span class="kcal-pill">${icon("flame")} ≈ ${Math.round(est.perPortion)} kcal/portion</span>
+      <span class="muted small">${est.complete ? "tous les ingrédients reconnus" : `${est.counted}/${est.tracked} ingrédients reconnus`} · <a href="#/foods">gérer les aliments</a></span>`;
+  }
+
   /* ----------------------- Liste de courses (fusion) ---------------------- */
   function normalizeName(name) {
     return String(name || "").trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
@@ -748,8 +1045,12 @@
     if (view === "cook" && id) {
       appEl.innerHTML = renderCookMode(recipeById(id));
       hydrateImages();
+      renderCookTimers();
+      if (cook && cook.timers.some((t) => !t.done && t.remaining > 0)) cookEnsureTicker();
       return;
     }
+    // En quittant le mode cuisson, on arrête les minuteurs en cours.
+    if (cook) { cookClearAll(); cook = null; }
 
     let content = "";
     if (!view) content = renderHome();
@@ -760,6 +1061,7 @@
     else if (view === "pantry") content = renderPantry();
     else if (view === "shopping") content = renderShopping();
     else if (view === "plan") content = renderPlan();
+    else if (view === "foods") content = renderFoods();
     else if (view === "sync") content = renderSync();
     else content = renderNotFound();
 
@@ -773,6 +1075,7 @@
     ["pantry", "#/pantry", "Placard", "basket"],
     ["shopping", "#/shopping", "Courses", "cart"],
     ["plan", "#/plan", "Planning", "calendar"],
+    ["foods", "#/foods", "Aliments", "apple"],
     ["sync", "#/sync", "Synchro", "cloud"],
   ];
 
@@ -935,6 +1238,7 @@
           <div class="meta-row">
             <span>${icon("timer")} ${escapeHtml(formatTime(recipe.totalTimeMinutes))}</span>
             <span>${escapeHtml(recipe.servings)} portions</span>
+            ${kcalBadge(recipe)}
             ${recipe.averageRating ? `<span>${icon("star")} ${escapeHtml(formatQuantity(recipe.averageRating))}</span>` : ""}
           </div>
           ${tags.length ? `<div class="badges">${tags.map((t) => `<span class="badge">${escapeHtml(t)}</span>`).join("")}</div>` : ""}
@@ -949,6 +1253,7 @@
     const target = Number(recipe._targetServings) || baseServings;
     const factor = target / baseServings;
     const ingredients = asArray(recipe.ingredients);
+    const cal = recipeCalories(recipe);
     const steps = asArray(recipe.steps).filter((s) => s.text && s.text !== PLACEHOLDER_STEP);
     const canShop = ingredients.length > 0;
     const cookedDays = relativeDays(recipe.lastCookedAt);
@@ -975,6 +1280,7 @@
             <span>${icon("timer")} ${escapeHtml(formatTime(recipe.totalTimeMinutes))}</span>
             <span>Prépa ${escapeHtml(formatTime(recipe.prepTimeMinutes))}</span>
             <span>Cuisson ${escapeHtml(formatTime(recipe.cookTimeMinutes))}</span>
+            ${cal.counted ? `<span>${icon("flame")} ≈ ${Math.round(cal.perPortion)} kcal/portion</span>` : ""}
             ${recipe.averageRating ? `<span>${icon("star")} ${escapeHtml(formatQuantity(recipe.averageRating))}/5</span>` : ""}
           </div>
         </div>
@@ -1017,6 +1323,12 @@
               </div>
               ${factor !== 1 ? `<span class="badge small">×${escapeHtml(formatQuantity(factor))}</span>` : ""}
             </div>
+            ${cal.counted ? `
+            <div class="kcal-summary">
+              <div class="kcal-figure"><strong>${Math.round(cal.perPortion)}</strong><span>kcal / portion</span></div>
+              <div class="kcal-figure"><strong>${Math.round(cal.perPortion * target)}</strong><span>kcal pour ${escapeHtml(target)} portion${target > 1 ? "s" : ""}</span></div>
+              <p class="muted small kcal-note">${icon("flame")} Estimation ${cal.complete ? "" : `· ${cal.counted}/${cal.tracked} ingrédients reconnus`}</p>
+            </div>` : ""}
             ${ingredients.length
               ? `<ul class="list ingredient-list">${ingredients.map((i) => `<li>${escapeHtml(scaledIngredientDisplay(i, factor))}</li>`).join("")}</ul>`
               : `<p class="empty">Ingrédients à renseigner.</p>`}
@@ -1077,6 +1389,7 @@
           <label class="wide">Tags<input name="tags" value="${escapeHtml(asArray(draft.tags).filter((t) => t.toLowerCase() !== "à compléter").join(", "))}" placeholder="rapide, végétarien…" /></label>
           <label class="wide">Ingrédients <span class="hint">(un par ligne, ex. « 200 g de farine »)</span>
             <textarea name="ingredients" spellcheck="true" rows="6">${escapeHtml(formatIngredientsText(draft.ingredients))}</textarea></label>
+          <div class="wide kcal-estimate" id="kcal-estimate">${kcalLineHtml(asArray(draft.ingredients), draft.servings)}</div>
           <label class="wide">Étapes <span class="hint">(une par ligne)</span>
             <textarea name="steps" spellcheck="true" rows="6">${escapeHtml(formatStepsText(draft.steps))}</textarea></label>
           <label class="wide">Notes personnelles<textarea name="personalNotes" spellcheck="true">${escapeHtml(draft.personalNotes)}</textarea></label>
@@ -1252,6 +1565,87 @@
       </label>`;
   }
 
+  /* ------------------------- Aliments (référentiel) ----------------------- */
+  function foodsListHtml() {
+    const q = normalizeName(ui.foodSearch || "");
+    const foods = allFoods().filter((f) => {
+      if (!q) return true;
+      return normalizeName([f.name, ...asArray(f.aliases)].join(" ")).includes(q);
+    });
+    if (!foods.length) return `<p class="empty">Aucun aliment ne correspond.</p>`;
+    const byAisle = new Map();
+    for (const f of foods) {
+      const a = f.aisle || "Autres";
+      if (!byAisle.has(a)) byAisle.set(a, []);
+      byAisle.get(a).push(f);
+    }
+    return [...AISLE_ORDER, ...[...byAisle.keys()].filter((a) => !AISLE_ORDER.includes(a))]
+      .filter((a) => byAisle.has(a))
+      .map((a) => {
+        const items = byAisle.get(a).sort((x, y) => x.name.localeCompare(y.name, "fr"));
+        return `
+          <div class="aisle-group">
+            <h3 class="aisle-head">${escapeHtml(a)} <span>${items.length}</span></h3>
+            <ul class="list">
+              ${items.map((f) => `
+                <li class="line-item food-row">
+                  <span class="food-main">
+                    <strong>${escapeHtml(f.name)}</strong>
+                    ${asArray(f.aliases).length ? `<span class="muted small">aussi : ${escapeHtml(asArray(f.aliases).slice(0, 4).join(", "))}</span>` : ""}
+                  </span>
+                  <span class="food-kcal">${escapeHtml(f.kcal100)} <span class="muted">kcal/100 g</span></span>
+                  <span class="food-acts">
+                    ${f.builtin ? `<span class="badge small" title="Aliment de base">base</span>` : ""}
+                    <button class="ghost icon-btn" type="button" data-action="edit-food" data-id="${escapeHtml(f.id)}" aria-label="Modifier">${icon("edit")}</button>
+                    <button class="ghost icon-btn" type="button" data-action="delete-food" data-id="${escapeHtml(f.id)}" aria-label="Supprimer">${icon("trash")}</button>
+                  </span>
+                </li>`).join("")}
+            </ul>
+          </div>`;
+      }).join("");
+  }
+
+  function renderFoods() {
+    const editing = ui.editFood ? foodById(ui.editFood) : null;
+    const d = editing || { name: "", aliases: [], aisle: "Autres", kcal100: "", gPerPiece: null, gPerCc: null, gPerCs: null, density: null };
+    const aisleOpts = AISLE_ORDER.map((a) => `<option value="${escapeHtml(a)}" ${d.aisle === a ? "selected" : ""}>${escapeHtml(a)}</option>`).join("");
+    const num = (v) => (v == null || v === "" ? "" : String(v));
+    return `
+      <div class="page-head">
+        <div><h2>Aliments & calories</h2><p>${allFoods().length} aliments · base de calories partagée</p></div>
+      </div>
+      <p class="muted" style="margin:-6px 0 18px">Ces valeurs (kcal pour 100 g) servent à estimer les calories de chaque recette. Ajoute tes ingrédients perso ou ajuste les valeurs existantes.</p>
+
+      <section class="content-grid foods-grid">
+        <div>
+          <div class="toolbar">
+            <div class="search-field">${icon("search")}<input id="food-search" type="search" placeholder="Rechercher un aliment…" value="${escapeHtml(ui.foodSearch)}" /></div>
+          </div>
+          <div id="foods-list">${foodsListHtml()}</div>
+        </div>
+
+        <aside class="panel sticky">
+          <div class="section-head"><h2>${editing ? "Modifier l’aliment" : "Nouvel aliment"}</h2></div>
+          <form id="food-form" class="form-grid" data-id="${escapeHtml(editing ? editing.id : "")}">
+            <label class="wide">Nom<input name="name" required value="${escapeHtml(d.name)}" placeholder="Ex. Crème de soja" /></label>
+            <label class="wide">Autres noms <span class="hint">(séparés par des virgules)</span>
+              <input name="aliases" value="${escapeHtml(asArray(d.aliases).join(", "))}" placeholder="creme soja, soja cuisine" /></label>
+            <label>Calories<input name="kcal100" type="number" min="0" step="1" required value="${escapeHtml(num(d.kcal100))}" /><span class="hint">kcal / 100 g</span></label>
+            <label>Rayon<select name="aisle">${aisleOpts}</select></label>
+            <label>Grammes/pièce<input name="gPerPiece" type="number" min="0" step="0.1" value="${escapeHtml(num(d.gPerPiece))}" /><span class="hint">ex. 1 œuf = 50</span></label>
+            <label>Densité<input name="density" type="number" min="0" step="0.01" value="${escapeHtml(num(d.density))}" /><span class="hint">g/ml (liquides)</span></label>
+            <label>g / c. à soupe<input name="gPerCs" type="number" min="0" step="0.1" value="${escapeHtml(num(d.gPerCs))}" /></label>
+            <label>g / c. à café<input name="gPerCc" type="number" min="0" step="0.1" value="${escapeHtml(num(d.gPerCc))}" /></label>
+            <div class="form-actions wide">
+              ${editing ? `<button class="ghost" type="button" data-action="cancel-edit-food">Annuler</button>` : ""}
+              <button type="submit">${icon("check")} ${editing ? "Enregistrer" : "Ajouter"}</button>
+            </div>
+          </form>
+        </aside>
+      </section>
+    `;
+  }
+
   /* --------------------------------- Synchro ------------------------------ */
   function renderSync() {
     const id = clientId();
@@ -1326,10 +1720,14 @@
   function renderCookMode(recipe) {
     if (!recipe) return renderNotFound();
     const steps = asArray(recipe.steps).filter((s) => s.text && s.text !== PLACEHOLDER_STEP);
-    if (!cook || cook.recipeId !== recipe.id) cook = { recipeId: recipe.id, index: 0, timer: null, remaining: 0 };
+    if (!cook || cook.recipeId !== recipe.id) { cookClearAll(); cook = { recipeId: recipe.id, index: 0, timers: [], ticker: null, seq: 0 }; }
     const index = Math.min(cook.index, Math.max(0, steps.length - 1));
     const step = steps[index];
     const ingredients = asArray(recipe.ingredients);
+    // Durée de l'étape : valeur enregistrée, sinon détectée à la volée dans le
+    // texte (pour profiter aussi des recettes non ré-enregistrées).
+    const stepTimer = step ? (Number(step.timerMinutes) || detectTimerMinutes(step.text)) : null;
+    const defMin = stepTimer || 5;
     return `
       <div class="cook-screen">
         <header class="cook-bar">
@@ -1341,10 +1739,23 @@
           <div class="cook-step">
             <span class="cook-step-num">${steps.length ? index + 1 : "—"}</span>
             <p>${step ? escapeHtml(step.text) : "Aucune étape renseignée."}</p>
-            <div class="cook-timer" id="cook-timer">${cook.remaining > 0 ? formatTimer(cook.remaining) : ""}</div>
-            <div class="cook-timer-actions">
-              ${[5, 10, 15].map((m) => `<button class="secondary small" type="button" data-action="cook-timer" data-min="${m}">${m} min</button>`).join("")}
-              ${cook.remaining > 0 ? `<button class="ghost small" type="button" data-action="cook-timer-stop">Arrêter</button>` : ""}
+
+            <div class="cook-timers" id="cook-timers"></div>
+
+            <div class="cook-timer-controls">
+              ${stepTimer ? `<button class="cook-timer-go" type="button" data-action="cook-timer-add" data-min="${stepTimer}">${icon("timer")} Lancer ${escapeHtml(formatTime(stepTimer))}</button>` : ""}
+              <div class="cook-set">
+                <div class="stepper cook-stepper">
+                  <button class="icon-btn" type="button" data-action="cook-min-dec" aria-label="Moins">−</button>
+                  <input id="cook-min" type="number" min="1" max="600" value="${defMin}" inputmode="numeric" aria-label="Minutes" />
+                  <span class="muted">min</span>
+                  <button class="icon-btn" type="button" data-action="cook-min-inc" aria-label="Plus">+</button>
+                </div>
+                <button class="secondary small" type="button" data-action="cook-timer-custom">${icon("timer")} Lancer</button>
+              </div>
+              <div class="cook-presets">
+                ${[1, 3, 5, 10].map((m) => `<button class="ghost small" type="button" data-action="cook-timer-add" data-min="${m}">${m} min</button>`).join("")}
+              </div>
             </div>
           </div>
           <aside class="cook-ingredients">
@@ -1379,24 +1790,37 @@
   }
   function parseIngredientsText(value) {
     return String(value || "").split(/\r?\n/).map((l) => l.trim()).filter(Boolean).map((line, index) => {
-      const [main, note] = line.split("|").map((p) => p.trim());
-      const parts = main.split(/\s+/).filter(Boolean);
-      let quantity = null, unit = "", name = main;
-      const first = parts[0] ? Number(parts[0].replace(",", ".")) : NaN;
-      if (Number.isFinite(first)) {
-        quantity = first;
-        if (parts[1] && KNOWN_UNITS.has(parts[1].toLowerCase())) { unit = parts[1]; name = parts.slice(2).join(" "); }
-        else { name = parts.slice(1).join(" "); }
-      }
-      return { id: uid("ing"), sortOrder: index, text: main, name: name || main, quantity, unit, note: note || null };
+      const main = line.split("|")[0].trim();
+      const p = parseIngredientLine(line);
+      const food = matchFood(p.name);
+      return {
+        id: uid("ing"), sortOrder: index, text: main, name: p.name || main,
+        quantity: p.quantity, unit: p.unit, note: p.note, foodId: food ? food.id : null,
+      };
     });
   }
   function formatStepsText(steps) {
     return asArray(steps).filter((s) => s.text && s.text !== PLACEHOLDER_STEP).map((s) => s.text).join("\n");
   }
+  // Repère une durée dans un texte d'étape : « 25 min », « 1 h 30 », « 1h », « 2 heures ».
+  function detectTimerMinutes(text) {
+    const t = String(text || "").toLowerCase();
+    let total = 0, found = false;
+    const hm = t.match(/(\d+)\s*(?:h|heure[s]?)\s*(\d{1,2})/);
+    if (hm) {
+      total = Number(hm[1]) * 60 + Number(hm[2]); found = true;
+    } else {
+      const h = t.match(/(\d+(?:[.,]\d+)?)\s*(?:h\b|heure[s]?)/);
+      if (h) { total += Math.round(Number(h[1].replace(",", ".")) * 60); found = true; }
+      const m = t.match(/(\d+)\s*(?:min\b|minute[s]?|mn\b)/);
+      if (m) { total += Number(m[1]); found = true; }
+    }
+    if (!found || total <= 0 || total > 24 * 60) return null;
+    return total;
+  }
   function parseStepsText(value) {
     return String(value || "").split(/\r?\n/).map((l) => l.trim()).filter(Boolean)
-      .map((text, index) => ({ id: uid("step"), sortOrder: index, text, timerMinutes: null }));
+      .map((text, index) => ({ id: uid("step"), sortOrder: index, text, timerMinutes: detectTimerMinutes(text) }));
   }
   function splitList(value) {
     return String(value || "").split(",").map((x) => x.trim()).filter(Boolean);
@@ -1563,29 +1987,116 @@
     commitChange("Réglages enregistrés");
   }
 
+  /* ------------------------- Aliments : mutations ------------------------- */
+  function saveFood(form) {
+    const d = new FormData(form);
+    const name = String(d.get("name") || "").trim();
+    if (!name) { toast("Le nom est requis"); return; }
+    const numOrNull = (key) => { const v = String(d.get(key) || "").trim(); return v === "" ? null : Number(v); };
+    const id = form.dataset.id || uid("food");
+    const existing = foodById(id);
+    const food = {
+      id, name,
+      aliases: splitList(d.get("aliases")),
+      aisle: String(d.get("aisle") || "Autres"),
+      kcal100: Number(d.get("kcal100")) || 0,
+      gPerPiece: numOrNull("gPerPiece"),
+      gPerCs: numOrNull("gPerCs"),
+      gPerCc: numOrNull("gPerCc"),
+      density: numOrNull("density"),
+      builtin: existing ? existing.builtin : false,
+    };
+    if (existing) state.foods = state.foods.map((f) => (f.id === id ? food : f));
+    else state.foods.push(food);
+    ui.editFood = null;
+    commitChange(existing ? "Aliment mis à jour" : "Aliment ajouté");
+  }
+  function deleteFood(id) {
+    const food = foodById(id);
+    if (!food) return;
+    state.foods = state.foods.filter((f) => f.id !== id);
+    // Un aliment de base supprimé est mémorisé pour ne pas réapparaître.
+    if (food.builtin && !asArray(state.removedFoods).includes(id)) state.removedFoods.push(id);
+    if (ui.editFood === id) ui.editFood = null;
+    commitChange("Aliment supprimé");
+  }
+
   /* ----------------------------- Mode cuisson ----------------------------- */
-  function cookStartTimer(minutes) {
-    cookStopTimer();
-    cook.remaining = minutes * 60;
-    updateCookTimer();
-    cook.timer = setInterval(() => {
-      cook.remaining -= 1;
-      if (cook.remaining <= 0) {
-        cookStopTimer();
-        toast("⏰ Minuteur terminé !");
-        try { navigator.vibrate && navigator.vibrate([200, 100, 200]); } catch (_) {}
+  // Minuteurs multiples : un seul « tic » d'horloge décrémente tous les
+  // minuteurs en cours. Ils survivent au changement d'étape (four + casserole).
+  function cookEnsureTicker() {
+    if (!cook || cook.ticker) return;
+    cook.ticker = setInterval(() => {
+      for (const t of cook.timers) {
+        if (!t.done && t.remaining > 0) {
+          t.remaining -= 1;
+          if (t.remaining <= 0) { t.remaining = 0; t.done = true; onCookTimerDone(t); }
+        }
       }
-      updateCookTimer();
+      renderCookTimers();
+      if (!cook.timers.some((t) => !t.done && t.remaining > 0)) { clearInterval(cook.ticker); cook.ticker = null; }
     }, 1000);
   }
-  function cookStopTimer() {
-    if (cook && cook.timer) { clearInterval(cook.timer); cook.timer = null; }
-    if (cook) cook.remaining = 0;
-    updateCookTimer();
+  function cookAddTimer(minutes, label) {
+    if (!cook) return;
+    const sec = Math.round(Number(minutes) * 60);
+    if (!Number.isFinite(sec) || sec <= 0) { toast("Durée invalide"); return; }
+    cook.timers.push({ id: "t" + (++cook.seq), label: label || formatTime(Math.round(Number(minutes))), total: sec, remaining: sec, done: false });
+    cookEnsureTicker();
+    renderCookTimers();
+    toast(`Minuteur lancé : ${formatTime(Math.round(Number(minutes)))}`);
   }
-  function updateCookTimer() {
-    const el = document.getElementById("cook-timer");
-    if (el) el.textContent = cook && cook.remaining > 0 ? formatTimer(cook.remaining) : "";
+  function cookRemoveTimer(tid) {
+    if (!cook) return;
+    cook.timers = cook.timers.filter((t) => t.id !== tid);
+    renderCookTimers();
+  }
+  function cookClearAll() {
+    if (cook && cook.ticker) { clearInterval(cook.ticker); cook.ticker = null; }
+    if (cook) cook.timers = [];
+  }
+  function renderCookTimers() {
+    const el = document.getElementById("cook-timers");
+    if (!el || !cook) return;
+    el.innerHTML = cook.timers.map((t) => `
+      <div class="cook-timer-chip ${t.done ? "done" : ""}">
+        <span class="cook-timer-time">${t.done ? "⏰ 0:00" : formatTimer(t.remaining)}</span>
+        <span class="cook-timer-label">${escapeHtml(t.label)}</span>
+        <button class="ghost icon-btn" type="button" data-action="cook-timer-remove" data-tid="${t.id}" aria-label="Retirer le minuteur">${icon("x")}</button>
+      </div>`).join("");
+  }
+  function onCookTimerDone(t) {
+    toast(`⏰ ${t.label} — minuteur terminé !`);
+    try { navigator.vibrate && navigator.vibrate([300, 150, 300, 150, 300]); } catch (_) {}
+    cookBeep();
+  }
+  function cookBeep() {
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      const ctx = new Ctx();
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.type = "sine"; o.frequency.value = 880;
+      g.gain.setValueAtTime(0.0001, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+      o.start();
+      let n = 0;
+      const iv = setInterval(() => {
+        o.frequency.value = o.frequency.value === 880 ? 620 : 880;
+        if (++n >= 6) {
+          clearInterval(iv);
+          g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.1);
+          o.stop(ctx.currentTime + 0.15);
+          setTimeout(() => { try { ctx.close(); } catch (_) {} }, 400);
+        }
+      }, 180);
+    } catch (_) {}
+  }
+  function cookAdjustMin(delta) {
+    const el = document.getElementById("cook-min");
+    if (!el) return;
+    el.value = Math.max(1, Math.min(600, (Number(el.value) || 0) + delta));
   }
 
   /* ====================================================================== *
@@ -1645,11 +2156,17 @@
         case "disconnect-pcloud": await disconnectPcloud(); break;
         case "pull-pcloud": await pullRemote(true); break;
         case "push-pcloud": await writeRemote(); toast("Enregistré dans pCloud"); break;
-        case "cook-prev": if (cook) { cookStopTimer(); cook.index = Math.max(0, cook.index - 1); render(); } break;
-        case "cook-next": if (cook) { cookStopTimer(); cook.index += 1; render(); } break;
-        case "cook-timer": cookStartTimer(Number(target.dataset.min)); render(); break;
-        case "cook-timer-stop": cookStopTimer(); render(); break;
-        case "cook-finish": cookStopTimer(); location.hash = `#/recipe/${id}`; toast("Bon appétit ! 🍽️ Pense à noter la recette."); break;
+        case "cook-prev": if (cook) { cook.index = Math.max(0, cook.index - 1); render(); } break;
+        case "cook-next": if (cook) { cook.index += 1; render(); } break;
+        case "cook-timer-add": cookAddTimer(Number(target.dataset.min)); break;
+        case "cook-timer-custom": { const el = document.getElementById("cook-min"); cookAddTimer(Number(el && el.value)); break; }
+        case "cook-min-inc": cookAdjustMin(1); break;
+        case "cook-min-dec": cookAdjustMin(-1); break;
+        case "cook-timer-remove": cookRemoveTimer(target.dataset.tid); break;
+        case "cook-finish": cookClearAll(); location.hash = `#/recipe/${id}`; toast("Bon appétit ! 🍽️ Pense à noter la recette."); break;
+        case "edit-food": ui.editFood = id; render(); window.scrollTo({ top: 0, behavior: "smooth" }); break;
+        case "cancel-edit-food": ui.editFood = null; render(); break;
+        case "delete-food": deleteFood(id); break;
       }
     } catch (e) {
       console.error(e);
@@ -1664,6 +2181,7 @@
     else if (form.id === "pantry-form") addPantryItem(form);
     else if (form.id === "shopping-form") addShoppingItem(form);
     else if (form.id === "settings-form") saveSettings(form);
+    else if (form.id === "food-form") saveFood(form);
     else if (form.id === "shopping-recipes-form") {
       const selected = new FormData(form).getAll("recipeIds");
       if (!selected.length) return;
@@ -1672,8 +2190,27 @@
     }
   });
 
+  let kcalTimer = null;
   appEl.addEventListener("input", (event) => {
-    if (event.target.id === "recipe-search") { ui.search = event.target.value; debounceSearch(); }
+    const t = event.target;
+    if (t.id === "recipe-search") { ui.search = t.value; debounceSearch(); return; }
+    if (t.id === "food-search") {
+      ui.foodSearch = t.value;
+      const box = document.getElementById("foods-list");
+      if (box) box.innerHTML = foodsListHtml();
+      return;
+    }
+    if (t.form && t.form.id === "recipe-form" && (t.name === "ingredients" || t.name === "servings")) {
+      clearTimeout(kcalTimer);
+      kcalTimer = setTimeout(() => {
+        const form = document.getElementById("recipe-form");
+        const box = document.getElementById("kcal-estimate");
+        if (!form || !box) return;
+        const ings = parseIngredientsText(form.elements.ingredients.value);
+        const sv = Number(form.elements.servings.value) || 1;
+        box.innerHTML = kcalLineHtml(ings, sv);
+      }, 250);
+    }
   });
   let searchTimer = null;
   function debounceSearch() {
