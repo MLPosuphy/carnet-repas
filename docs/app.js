@@ -248,6 +248,7 @@
     back: '<path d="M11 6 5 12l6 6"/><path d="M5 12h14"/>',
     apple: '<path d="M12 8c-1.6-2.2-4.2-2.6-5.8-1.1C4.4 8.6 5 13 7.6 16c1 1.2 2 2 4.4 2s3.4-.8 4.4-2c2.6-3 3.2-7.4 1.4-9.1-1.6-1.5-4.2-1.1-5.8 1.1z"/><path d="M12 8c0-2 .6-3.6 2.6-4.6"/>',
     plate: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/>',
+    chart: '<path d="M4 4v16h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/>',
   };
   function icon(name, cls) {
     const body = ICONS[name] || "";
@@ -269,7 +270,8 @@
   let undoTimer = null;
   let cook = null; // état du mode cuisson { recipeId, index, timers }
 
-  const ui = { search: "", chapter: "all", status: "all", planWeek: 0, foodSearch: "", editFood: null };
+  const ui = { search: "", chapter: "all", status: "all", planWeek: 0, foodSearch: "", editFood: null,
+    planView: "week", planYear: new Date().getFullYear(), statsYear: new Date().getFullYear() };
 
   const pcloud = { token: null, host: null, email: null, userid: null, connected: false };
 
@@ -1061,6 +1063,7 @@
     else if (view === "pantry") content = renderPantry();
     else if (view === "shopping") content = renderShopping();
     else if (view === "plan") content = renderPlan();
+    else if (view === "stats") content = renderStats();
     else if (view === "foods") content = renderFoods();
     else if (view === "sync") content = renderSync();
     else content = renderNotFound();
@@ -1075,6 +1078,7 @@
     ["pantry", "#/pantry", "Placard", "basket"],
     ["shopping", "#/shopping", "Courses", "cart"],
     ["plan", "#/plan", "Planning", "calendar"],
+    ["stats", "#/stats", "Stats", "chart"],
     ["foods", "#/foods", "Aliments", "apple"],
     ["sync", "#/sync", "Synchro", "cloud"],
   ];
@@ -1525,7 +1529,16 @@
     d.setDate(d.getDate() - day + offset * 7);
     return d;
   }
+  function planViewToggle() {
+    const mode = ui.planView === "year" ? "year" : "week";
+    return `
+      <div class="seg" role="tablist">
+        <button class="${mode === "week" ? "active" : ""}" type="button" data-action="plan-view-week">Semaine</button>
+        <button class="${mode === "year" ? "active" : ""}" type="button" data-action="plan-view-year">Année</button>
+      </div>`;
+  }
   function renderPlan() {
+    if (ui.planView === "year") return renderPlanYear();
     const recipes = [...state.recipes].sort((a, b) => a.title.localeCompare(b.title, "fr"));
     const start = weekStart(ui.planWeek);
     const days = Array.from({ length: 7 }, (_, i) => { const d = new Date(start); d.setDate(start.getDate() + i); return d; });
@@ -1534,15 +1547,268 @@
       `${formatShortDate(start)} → ${formatShortDate(end)}`;
     return `
       <div class="page-head">
-        <div><h2>Planning</h2><p>${escapeHtml(label)}</p></div>
-        <div class="week-nav">
-          <button class="icon-btn" type="button" data-action="week-prev" aria-label="Semaine précédente">${icon("left")}</button>
-          <button class="secondary small" type="button" data-action="week-today">Aujourd’hui</button>
-          <button class="icon-btn" type="button" data-action="week-next" aria-label="Semaine suivante">${icon("right")}</button>
+        <div><h2>${icon("calendar")} Planning</h2><p>${escapeHtml(label)}</p></div>
+        <div class="plan-controls">
+          ${planViewToggle()}
+          <div class="week-nav">
+            <button class="icon-btn" type="button" data-action="week-prev" aria-label="Semaine précédente">${icon("left")}</button>
+            <button class="secondary small" type="button" data-action="week-today">Aujourd’hui</button>
+            <button class="icon-btn" type="button" data-action="week-next" aria-label="Semaine suivante">${icon("right")}</button>
+          </div>
         </div>
       </div>
       <div class="plan-grid">${days.map((d) => renderDay(d, recipes)).join("")}</div>
     `;
+  }
+
+  /* ----- Vue annuelle (heatmap calendaire) ----- */
+  const MONTHS_FR = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+    "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+  const WEEKDAYS_FR = ["L", "M", "M", "J", "V", "S", "D"];
+
+  // Repas planifiés indexés par date : "2026-06-29" -> { lunch:id, dinner:id }
+  function planByDate() {
+    const map = new Map();
+    for (const e of state.mealPlan) {
+      if (!e.recipeId) continue;
+      if (!map.has(e.date)) map.set(e.date, {});
+      map.get(e.date)[e.meal] = e.recipeId;
+    }
+    return map;
+  }
+  // Décalage (en semaines) entre la semaine d'une date et la semaine courante.
+  function weekOffsetForDate(date) {
+    const base = weekStart(0).getTime();
+    const d = new Date(date); d.setHours(0, 0, 0, 0);
+    const day = (d.getDay() + 6) % 7;
+    d.setDate(d.getDate() - day);
+    return Math.round((d.getTime() - base) / (7 * 86400000));
+  }
+  function renderMiniMonth(year, mi, map) {
+    const first = new Date(year, mi, 1);
+    const lead = (first.getDay() + 6) % 7;
+    const nbDays = new Date(year, mi + 1, 0).getDate();
+    const todayIso = localIso(new Date());
+    let cells = "";
+    for (let i = 0; i < lead; i++) cells += `<span class="d empty"></span>`;
+    for (let d = 1; d <= nbDays; d++) {
+      const iso = `${year}-${String(mi + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+      const meals = map.get(iso);
+      const n = meals ? (meals.lunch ? 1 : 0) + (meals.dinner ? 1 : 0) : 0;
+      const titles = meals ? [meals.lunch, meals.dinner].filter(Boolean)
+        .map((id) => recipeById(id)?.title).filter(Boolean) : [];
+      const tip = titles.length ? `${formatShortDate(new Date(iso + "T00:00:00"))} · ${titles.join(" · ")}` : "";
+      cells += `<button type="button" class="d lvl${n}${iso === todayIso ? " today" : ""}" data-action="goto-week" data-iso="${iso}" title="${escapeHtml(tip)}">${d}</button>`;
+    }
+    return `<div class="mini-month">
+      <h4>${MONTHS_FR[mi]}</h4>
+      <div class="wd">${WEEKDAYS_FR.map((w) => `<span>${w}</span>`).join("")}</div>
+      <div class="days">${cells}</div>
+    </div>`;
+  }
+  function renderPlanYear() {
+    const year = ui.planYear;
+    const map = planByDate();
+    const count = state.mealPlan.filter((e) => e.recipeId && e.date.startsWith(`${year}-`)).length;
+    return `
+      <div class="page-head">
+        <div><h2>${icon("calendar")} Planning</h2><p>${count} repas planifié${count > 1 ? "s" : ""} en ${year}</p></div>
+        <div class="plan-controls">
+          ${planViewToggle()}
+          <div class="week-nav">
+            <button class="icon-btn" type="button" data-action="plan-year-prev" aria-label="Année précédente">${icon("left")}</button>
+            <button class="secondary small" type="button" data-action="plan-year-today">${year}</button>
+            <button class="icon-btn" type="button" data-action="plan-year-next" aria-label="Année suivante">${icon("right")}</button>
+          </div>
+        </div>
+      </div>
+      <div class="year-grid">${MONTHS_FR.map((_, mi) => renderMiniMonth(year, mi, map)).join("")}</div>
+      <p class="muted small year-legend">
+        <span class="yl"><i class="lvl0"></i> libre</span>
+        <span class="yl"><i class="lvl1"></i> 1 repas</span>
+        <span class="yl"><i class="lvl2"></i> 2 repas</span>
+        <span class="sep">·</span> clique un jour pour le remplir dans la vue semaine
+      </p>`;
+  }
+
+  /* ------------------------------- Statistiques --------------------------- */
+  const SEASON_FR = { all_year: "Toute l'année", winter: "Hiver", spring: "Printemps", summer: "Été", autumn: "Automne" };
+  const DIFF_FR = { easy: "Facile", medium: "Moyen", hard: "Difficile" };
+  const COST_FR = { low: "Économique", medium: "Moyen", high: "Coûteux" };
+  const MEAL_FR = { lunch: "Déjeuner", dinner: "Dîner" };
+
+  function chapterColorByTitle(title) {
+    const c = state.chapters.find((ch) => ch.title === title);
+    return c?.color || "var(--accent)";
+  }
+  // Liste de barres horizontales : items = [{ label, value, display?, color? }]
+  function barRows(items) {
+    if (!items.length) return `<p class="muted small">Pas encore de données.</p>`;
+    const max = Math.max(1, ...items.map((i) => i.value));
+    return `<div class="bar-list">${items.map((i) => `
+      <div class="bar-row">
+        <span class="bar-label" title="${escapeHtml(i.label)}">${escapeHtml(i.label)}</span>
+        <span class="bar-track"><span class="bar-fill" style="width:${Math.max(4, Math.round(i.value / max * 100))}%${i.color ? `;background:${i.color}` : ""}"></span></span>
+        <span class="bar-val">${escapeHtml(String(i.display != null ? i.display : i.value))}</span>
+      </div>`).join("")}</div>`;
+  }
+  function mapRows(m, labels) {
+    return [...m.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ label: (labels && labels[k]) || k, value: v }));
+  }
+  function topDishHtml(top) {
+    const max = Math.max(1, ...top.map((t) => t.n));
+    return `<ol class="rank-list">${top.map((t, i) => `
+      <li>
+        <span class="rank-n">${i + 1}</span>
+        <a class="rank-main" href="#/recipe/${escapeHtml(t.id)}">
+          <span class="rank-title">${escapeHtml(t.title)}</span>
+          <span class="rank-track"><span class="rank-fill" style="width:${Math.max(6, Math.round(t.n / max * 100))}%"></span></span>
+        </a>
+        <span class="rank-val">${t.n}×</span>
+      </li>`).join("")}</ol>`;
+  }
+  function renderMonthChart(byMonth) {
+    const max = Math.max(1, ...byMonth);
+    return `<div class="month-chart">${byMonth.map((v, i) => `
+      <div class="mc-col" title="${MONTHS_FR[i]} : ${v} repas">
+        <span class="mc-bar"><i style="height:${v ? Math.max(6, Math.round(v / max * 100)) : 0}%"></i></span>
+        <span class="mc-x">${MONTHS_FR[i].slice(0, 1)}</span>
+      </div>`).join("")}</div>`;
+  }
+
+  function renderStats() {
+    const year = ui.statsYear;
+    const yearLabel = year === "all" ? "Toutes" : String(year);
+    const entries = state.mealPlan.filter((e) => e.recipeId && recipeById(e.recipeId) &&
+      (year === "all" || e.date.startsWith(`${year}-`)));
+    const head = `
+      <div class="page-head">
+        <div><h2>${icon("chart")} Stats</h2><p>${entries.length} repas analysé${entries.length > 1 ? "s" : ""}${year === "all" ? "" : ` en ${year}`}</p></div>
+        <div class="week-nav">
+          <button class="icon-btn" type="button" data-action="stats-year-prev" aria-label="Année précédente">${icon("left")}</button>
+          <button class="secondary small ${year === "all" ? "active" : ""}" type="button" data-action="stats-year-all">${yearLabel}</button>
+          <button class="icon-btn" type="button" data-action="stats-year-next" aria-label="Année suivante">${icon("right")}</button>
+        </div>
+      </div>`;
+    if (!entries.length) {
+      return head + `
+        <div class="panel stats-empty">
+          <p>${icon("calendar")} Aucun repas planifié ${year === "all" ? "pour l'instant" : `en ${year}`}.</p>
+          <p class="muted">Remplis ton <a href="#/plan">planning</a> : les statistiques se calculent toutes seules à partir des repas planifiés.</p>
+        </div>`;
+    }
+
+    const byRecipe = new Map();
+    const days = new Set();
+    const byChapter = new Map(), byDiff = new Map(), byCost = new Map(), byMeal = new Map(), bySeason = new Map();
+    const byMonth = new Array(12).fill(0);
+    const kcalByDay = new Map();
+    let totalTime = 0;
+    for (const e of entries) {
+      const r = recipeById(e.recipeId);
+      byRecipe.set(e.recipeId, (byRecipe.get(e.recipeId) || 0) + 1);
+      days.add(e.date);
+      const ch = asArray(r.chapters)[0] || "Sans catégorie";
+      byChapter.set(ch, (byChapter.get(ch) || 0) + 1);
+      if (r.difficulty) byDiff.set(r.difficulty, (byDiff.get(r.difficulty) || 0) + 1);
+      if (r.costLevel) byCost.set(r.costLevel, (byCost.get(r.costLevel) || 0) + 1);
+      byMeal.set(e.meal, (byMeal.get(e.meal) || 0) + 1);
+      if (r.season) bySeason.set(r.season, (bySeason.get(r.season) || 0) + 1);
+      const mi = Number(e.date.slice(5, 7)) - 1;
+      if (mi >= 0 && mi < 12) byMonth[mi] += 1;
+      totalTime += Number(r.totalTimeMinutes) || 0;
+      const cal = recipeCalories(r);
+      if (cal.counted) kcalByDay.set(e.date, (kcalByDay.get(e.date) || 0) + cal.perPortion);
+    }
+    const distinct = byRecipe.size;
+    const variety = Math.round(distinct / entries.length * 100);
+    const kcalPerDay = kcalByDay.size
+      ? Math.round([...kcalByDay.values()].reduce((a, b) => a + b, 0) / kcalByDay.size) : null;
+    const avgTime = Math.round(totalTime / entries.length);
+
+    const top = [...byRecipe.entries()].map(([id, n]) => ({ id, n, title: recipeById(id).title }))
+      .sort((a, b) => b.n - a.n).slice(0, 10);
+
+    // Notes (sessions de cuisson)
+    const ratingAgg = new Map();
+    for (const s of state.cookSessions) {
+      if (!s.rating || !recipeById(s.recipeId)) continue;
+      if (year !== "all" && !(s.date || "").startsWith(`${year}-`)) continue;
+      const a = ratingAgg.get(s.recipeId) || { sum: 0, n: 0 };
+      a.sum += Number(s.rating); a.n += 1; ratingAgg.set(s.recipeId, a);
+    }
+    const topRated = [...ratingAgg.entries()]
+      .map(([id, a]) => ({ id, title: recipeById(id).title, avg: a.sum / a.n }))
+      .sort((x, y) => y.avg - x.avg).slice(0, 6);
+
+    // Jamais planifié + pas mangé depuis longtemps (toutes années, plus parlant)
+    const lastEver = new Map();
+    for (const e of state.mealPlan) {
+      if (!e.recipeId) continue;
+      if (!lastEver.has(e.recipeId) || e.date > lastEver.get(e.recipeId)) lastEver.set(e.recipeId, e.date);
+    }
+    const never = state.recipes.filter((r) => !lastEver.has(r.id));
+    const stale = [...lastEver.entries()]
+      .map(([id, date]) => ({ id, title: recipeById(id)?.title, days: relativeDays(`${date}T00:00:00`) }))
+      .filter((x) => x.title && x.days != null && x.days >= 30)
+      .sort((a, b) => b.days - a.days).slice(0, 6);
+
+    const kpis = `
+      <div class="stats-grid">
+        <div class="stat"><span>Repas planifiés</span><strong>${entries.length}</strong><span class="stat-ic">${icon("calendar")}</span></div>
+        <div class="stat"><span>Recettes différentes</span><strong>${distinct}</strong><span class="stat-ic">${icon("book")}</span></div>
+        <div class="stat"><span>Indice de variété</span><strong>${variety}%</strong><span class="stat-ic">${icon("sparkles")}</span></div>
+        <div class="stat"><span>${kcalPerDay != null ? "kcal / jour ≈" : "Temps moyen"}</span><strong>${kcalPerDay != null ? kcalPerDay : formatTime(avgTime)}</strong><span class="stat-ic">${icon("flame")}</span></div>
+      </div>`;
+
+    const panels = `
+      <div class="stats-cols">
+        <div class="panel span-2">
+          <div class="section-head"><h2>${icon("star")} Plats les plus mangés</h2></div>
+          ${topDishHtml(top)}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Par catégorie</h2></div>
+          ${barRows([...byChapter.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ label: k, value: v, color: chapterColorByTitle(k) })))}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Activité par mois</h2></div>
+          ${renderMonthChart(byMonth)}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Déjeuner / Dîner</h2></div>
+          ${barRows(mapRows(byMeal, MEAL_FR))}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Difficulté</h2></div>
+          ${barRows(mapRows(byDiff, DIFF_FR))}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Budget</h2></div>
+          ${barRows(mapRows(byCost, COST_FR))}
+        </div>
+        <div class="panel">
+          <div class="section-head"><h2>Saisonnalité</h2></div>
+          ${barRows(mapRows(bySeason, SEASON_FR))}
+        </div>
+        ${topRated.length ? `
+        <div class="panel">
+          <div class="section-head"><h2>${icon("star")} Mieux notées</h2></div>
+          ${barRows(topRated.map((t) => ({ label: t.title, value: Math.round(t.avg * 10), display: `${t.avg.toFixed(1)}★` })))}
+        </div>` : ""}
+        ${stale.length ? `
+        <div class="panel">
+          <div class="section-head"><h2>${icon("timer")} À refaire bientôt ?</h2><p>pas mangé depuis longtemps</p></div>
+          <ul class="list compact">${stale.map((s) => `<li class="line-item"><a href="#/recipe/${escapeHtml(s.id)}">${escapeHtml(s.title)}</a><span class="muted small">il y a ${s.days} j</span></li>`).join("")}</ul>
+        </div>` : ""}
+        ${never.length ? `
+        <div class="panel">
+          <div class="section-head"><h2>${icon("plus")} Jamais cuisinées</h2><p>${never.length} recette${never.length > 1 ? "s" : ""} à découvrir</p></div>
+          <ul class="list compact">${never.slice(0, 8).map((r) => `<li class="line-item"><a href="#/recipe/${escapeHtml(r.id)}">${escapeHtml(r.title)}</a></li>`).join("")}</ul>
+        </div>` : ""}
+      </div>`;
+
+    return head + kpis + panels;
   }
   function renderDay(date, recipes) {
     const iso = localIso(date);
@@ -2151,6 +2417,20 @@
         case "week-prev": ui.planWeek -= 1; render(); break;
         case "week-next": ui.planWeek += 1; render(); break;
         case "week-today": ui.planWeek = 0; render(); break;
+        case "plan-view-week": ui.planView = "week"; render(); break;
+        case "plan-view-year": ui.planView = "year"; render(); break;
+        case "plan-year-prev": ui.planYear -= 1; render(); break;
+        case "plan-year-next": ui.planYear += 1; render(); break;
+        case "plan-year-today": ui.planYear = new Date().getFullYear(); render(); break;
+        case "goto-week":
+          ui.planWeek = weekOffsetForDate(new Date(`${target.dataset.iso}T00:00:00`));
+          ui.planView = "week"; render(); break;
+        case "stats-year-prev":
+          ui.statsYear = (ui.statsYear === "all" ? new Date().getFullYear() : ui.statsYear) - 1; render(); break;
+        case "stats-year-next":
+          ui.statsYear = (ui.statsYear === "all" ? new Date().getFullYear() : ui.statsYear) + 1; render(); break;
+        case "stats-year-all":
+          ui.statsYear = ui.statsYear === "all" ? new Date().getFullYear() : "all"; render(); break;
         case "export-json": exportJson(); break;
         case "connect-pcloud": connectPcloud(); break;
         case "disconnect-pcloud": await disconnectPcloud(); break;
